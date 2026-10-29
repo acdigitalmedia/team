@@ -118,6 +118,22 @@
     .closing { background: #0E2436; }
     footer.wrap { max-width: none; background: #0B1D30; color: #A9BED2; }
     footer a:hover { color: var(--yellow); }
+    /* ---- video ---- */
+    .video { background: #fff; padding: 88px 0; }
+    .video-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: center; }
+    .video h2 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 48px; line-height: 1; margin: 0 0 16px; color: var(--accent); }
+    .video p { color: var(--muted); font-size: 18px; margin: 0 0 14px; }
+    .video ul { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+    .video li { background: #EEF4FA; color: var(--accent); font-weight: 600; font-size: 14px; padding: 6px 12px; border-radius: 999px; }
+    .player { position: relative; aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden; background: var(--accent); background-image: radial-gradient(120% 90% at 80% 10%, #1A5E96 0%, var(--accent) 55%, #0B3F6B 100%); box-shadow: 0 0 0 6px #EEF4FA, 0 24px 48px rgba(14,36,54,.25); display: flex; align-items: center; justify-content: center; color: #fff; text-decoration: none; }
+    .player .play { width: 96px; height: 96px; border-radius: 50%; background: var(--yellow); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.3); transition: transform .15s; }
+    .player:hover .play { transform: scale(1.06); }
+    .player .lbl { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 18px; display: flex; justify-content: space-between; gap: 12px; font-size: 14px; background: linear-gradient(transparent, rgba(11,29,48,.7)); }
+    .player .lbl b { font-weight: 700; }
+    .player .lbl small { font-family: ui-monospace, monospace; color: #BFD3E6; }
+    .player .note { position: absolute; top: 14px; left: 18px; font-family: ui-monospace, monospace; font-size: 12px; color: #BFD3E6; }
+    @media (max-width: 900px) { .video-grid { grid-template-columns: 1fr; gap: 28px; } .player .play { width: 72px; height: 72px; } }
+    @media (max-width: 560px) { .player .lbl small { display: none; } .video { padding: 56px 0; } .video h2 { font-size: 38px; } }
     /* ---- photo slots ---- */
     .photo { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; padding: 20px; background: #DFE9F3; color: #0E4D82; border: 2px dashed #9DB6CE; border-radius: 10px; }
     .photo b { font-size: 15px; font-weight: 700; }
@@ -228,6 +244,24 @@
         <h3>Left tidy every day</h3>
         <p>We clean up at the end of every day, not just the last one. "You would never have known there had been a tradesman in the house."</p>
       </div>
+    </div>
+  </section>
+
+  <section class="video" id="video" data-od-id="video">
+    <div class="wrap video-grid">
+      <div>
+        <span class="eyebrow" style="color:var(--accent)">Watch</span>
+        <h2>What GB Fixit can do for you</h2>
+        <p>A quick cartoon tour of Kris and Gary's services, from hanging doors and painting rooms to fences, gardens and plumbing.</p>
+        <ul aria-label="Services shown in the video">
+          <li>Decorating</li><li>Joinery</li><li>Fencing</li><li>Gardens</li><li>Repairs</li><li>Plumbing</li>
+        </ul>
+      </div>
+      <a class="player" href="#video" role="img" aria-label="Video placeholder: GB Fixit cartoon showing their services">
+        <span class="note">[VIDEO: GB Fixit cartoon · 16:9]</span>
+        <span class="play"><svg aria-hidden="true" width="38" height="38" viewBox="0 0 24 24" fill="#0E2436"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
+        <span class="lbl"><b>GB Fixit: our services</b><small>Wix Video or YouTube embed</small></span>
+      </a>
     </div>
   </section>
 
