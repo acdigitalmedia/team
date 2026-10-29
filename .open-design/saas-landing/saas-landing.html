@@ -82,6 +82,42 @@
     footer { padding: 28px 0; color: var(--muted); font-size: 14px; text-align: center; }
     footer a { text-decoration: none; }
     footer a:hover { color: var(--accent); }
+
+    /* ---- GB Fixit blue ---- */
+    .hero-band { background: var(--accent); color: #fff; background-image: radial-gradient(120% 90% at 85% 10%, #1A5E96 0%, var(--accent) 55%, #0B3F6B 100%); }
+    .hero-band header { border-bottom: 1px solid rgba(255,255,255,.16); }
+    .hero-band nav a { color: #fff; }
+    .hero-band nav a:hover { color: var(--yellow); }
+    .hero-band .btn-secondary { color: #fff; border-color: #fff; }
+    .hero-band .btn-secondary:hover { background: #fff; color: var(--accent); }
+    .hero-band .eyebrow { color: #BFD3E6; }
+    .hero-band .hero h1 { color: #fff; }
+    .hero-band .hero h1 span { color: var(--yellow); }
+    .hero-band .hero .sub { color: #fff; }
+    .hero-band .hero p { color: #D6E2EE; }
+    .hero-band .btn-link { color: #fff; }
+    .features { background: #EEF4FA; border-color: #DCE5EE; }
+    .feature h3 { color: var(--accent); }
+    .feature .num { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; }
+    section.proof.wrap { max-width: none; background: #2B6CA3; color: #fff; }
+    .proof h2 { color: #D6E2EE; }
+    .logos b { color: #fff; }
+    .logos span { color: #D6E2EE; }
+    .quote { color: #fff; }
+    .quote cite { color: #D6E2EE; }
+    .pricing h2 { color: var(--accent); }
+    .tier { border-top: 6px solid var(--accent); }
+    .tier h3 { color: var(--accent); }
+    .tier.featured { background: var(--accent); color: #fff; border: 0; border-top: 6px solid var(--yellow); }
+    .tier.featured::before { background: var(--yellow); color: var(--fg); }
+    .tier.featured h3 { color: #fff; }
+    .tier.featured .for { color: #D6E2EE; }
+    .tier.featured ul li { border-color: rgba(255,255,255,.2); }
+    .tier.featured ul a:hover { color: var(--yellow); }
+    .tier.featured ul a::after { color: var(--yellow); }
+    .closing { background: #0E2436; }
+    footer.wrap { max-width: none; background: #0B1D30; color: #A9BED2; }
+    footer a:hover { color: var(--yellow); }
     @media (max-width: 900px) { nav a { display: none; } }
     @media (max-width: 800px) { .feature-grid, .tiers { grid-template-columns: 1fr; } .tiers { gap: 28px; } }
     @media (max-width: 560px) {
@@ -99,6 +135,7 @@
   </style>
 </head>
 <body>
+  <div class="hero-band">
   <div class="wrap">
     <header data-od-id="topnav">
       <a class="logo" href="/" aria-label="GB Fixit Handyman Services, home"><img src="assets/gb-fixit-logo.png" alt="Handyman Dundee - GB Fixit Handyman Services" width="358" height="122"></a>
@@ -121,6 +158,7 @@
         <a class="btn-link" href="tel:+447740443180">Or call Kris on 07740 443180 →</a>
       </div>
     </section>
+  </div>
   </div>
 
   <section class="features" id="how" data-od-id="features">
