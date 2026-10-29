@@ -5,17 +5,17 @@
 
 ## Color Palette
 - **Navy #0E4D82**: primary brand colour. Header bar, headings, outline buttons, icons, table heads.
-- **Fixit Yellow #FECC00**: calls to action only (Get a quote, Call Kris). Always navy text on yellow, never white.
-- **Deep Navy #0B1D30 / #0F2236**: footer and dark bands; link hover colour.
-- **Mid Blue #2F6BA3**: the reviews band and secondary dark surfaces.
-- **Cream #F5F2EA**: alternate section background; form panels. Deeper cream #E9E5DA / #D9D3C4 for photo placeholders and chips.
+- **Fixit Yellow #FFDE11**: calls to action only (Get a quote, Call Kris). Always navy text on yellow, never white.
+- **Deep Navy #0B1D30 / #0E2436**: footer and dark bands; link hover colour.
+- **Mid Blue #2B6CA3**: the reviews band and secondary dark surfaces.
+- **Cream #FCF9E6**: alternate section background; form panels. Deeper cream #EFEAD2 / #E2DBBE for photo placeholders and chips.
 - **White #FFFFFF**: main page background and cards.
 - **Ink #1F2933**: body text. **Slate #4A5562**: captions, meta, breadcrumbs.
 - **Border #E3DED2**: card edges and row dividers; input borders #B9B2A3.
 
 ## Typography
 - **Display: Barlow Semi Condensed** (Google Fonts), UPPERCASE, letter-spacing 0.5px, to match the logo's "HANDYMAN SERVICES" lettering. H1 800 at 64px / 1.0, H2 700 at 42px, H3 700 at 22–24px. A sentence-case subtitle under the H1 is set in Barlow 500.
-- **Body: Barlow** (Google Fonts), 400 body at 17px / 1.6, 500–700 for UI.
+- **Body: Barlow** (Google Fonts; the live Wix site uses DIN Next, which Barlow closely matches), 400 body at 17px / 1.6, 500–700 for UI.
 - **Labels and buttons**: Barlow 600, UPPERCASE, letter-spacing 1px; eyebrow labels 14px with 1.5px tracking in Slate.
 - Big numbers in trust strips (9.8/10, 5.0 ★) set in Barlow Semi Condensed 700, 32–44px, navy.
 

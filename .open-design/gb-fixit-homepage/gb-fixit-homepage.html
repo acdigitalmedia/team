@@ -4,21 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Handyman Dundee | GB Fixit Handyman Services</title>
-<meta name="description" content="Kris and Gary Brown, father-and-son handymen in Dundee. Painting, joinery, fencing, gardens, repairs and plumbing. 9.8/10 from 59 Reference Line reviews. Free written quotes.">
+<meta name="description" content="Local, friendly handyman in Dundee covering Dundee and surrounding areas. Kris and Gary at GB Fixit do everything from hanging doors to mowing lawns, and now plumbing. Free quotes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --navy: #0E4D82;
-  --navy-deep: #0F2236;
+  --navy-deep: #0E2436;
   --navy-ink: #0B1D30;
-  --blue: #2F6BA3;
-  --yellow: #FECC00;
-  --yellow-hover: #F2C230;
-  --cream: #F5F2EA;
-  --cream-deep: #E9E5DA;
-  --cream-line: #D9D3C4;
+  --blue: #2B6CA3;
+  --yellow: #FFDE11;
+  --yellow-hover: #F5D20A;
+  --cream: #FCF9E6;
+  --cream-deep: #EFEAD2;
+  --cream-line: #E2DBBE;
   --ink: #1F2933;
   --slate: #4A5562;
   --line: #E3DED2;
@@ -107,6 +107,10 @@ p { margin: 0; }
 .svc .arrow-link { margin-top: auto; padding-top: 10px; color: var(--navy); }
 .tag-new { display: inline-block; background: var(--yellow); color: var(--navy); font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; margin-left: 8px; vertical-align: middle; font-family: var(--body); }
 
+/* gallery */
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.gallery .ph { height: 220px; }
+
 /* landlords */
 .landlords { background: var(--navy); color: #fff; }
 .landlords .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
@@ -120,7 +124,7 @@ p { margin: 0; }
 
 /* how we work */
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; counter-reset: step; }
-.step { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 26px 24px; }
+.step { background: var(--cream); border: 1px solid var(--line); border-radius: 10px; padding: 26px 24px; }
 .step-num { font-family: var(--display); font-weight: 800; font-size: 44px; line-height: 1; color: var(--navy); display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
 .step-num::after { content: ""; flex: 1; height: 2px; background: var(--yellow); }
 .step h3 { font-size: 21px; margin-bottom: 8px; }
@@ -210,7 +214,7 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
   .hero .wrap, .landlords .wrap, .areas .wrap, .about .wrap, .quote-sec .wrap { grid-template-columns: 1fr; gap: 36px; }
   .hero-photo .ph { height: 300px; }
   .hero-badge { left: 12px; bottom: 12px; }
-  .services, .quotes { grid-template-columns: 1fr 1fr; }
+  .services, .quotes, .gallery { grid-template-columns: 1fr 1fr; }
   .steps { grid-template-columns: 1fr 1fr; }
   .foot-grid { grid-template-columns: 1fr 1fr; }
   .landlords .ph, .areas .ph, .about .ph { height: 240px; }
@@ -227,6 +231,7 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
   .lede { font-size: 17px; }
   .section { padding: 44px 0; }
   .services, .quotes, .steps, .ll-list, .area-cards, .foot-grid { grid-template-columns: 1fr; }
+  .gallery .ph { height: 160px; }
   form.qf { grid-template-columns: 1fr; padding: 22px; }
   .hero-ctas .btn { width: 100%; }
   .trust { gap: 14px 24px; }
@@ -241,14 +246,14 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
 
 <div class="topbar">
   <div class="wrap">
-    <span>Dundee Trusted Trader · Reviewed on Reference Line since 2017</span>
+    <span>Rated one of the best three handymen in the Dundee area for the 4th year running · Dundee Trusted Trader</span>
     <span class="hide-sm"><a href="mailto:kris@gbfixit.co.uk">kris@gbfixit.co.uk</a></span>
   </div>
 </div>
 
 <header class="header">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="GB Fixit Handyman Services, home"><img src="assets/gb-fixit-logo.png" alt="GB Fixit Handyman Services" width="358" height="122"></a>
+    <a class="logo" href="/" aria-label="GB Fixit Handyman Services, home"><img src="assets/gb-fixit-logo.png" alt="Handyman Dundee - GB Fixit Handyman Services" width="358" height="122"></a>
 
     <nav class="nav" aria-label="Main">
       <div class="dd">
@@ -314,8 +319,8 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
   <div class="wrap">
     <div>
       <p class="eyebrow">GB Fixit Handyman Services</p>
-      <h1>Handyman in Dundee<span>Kris and Gary: one call for the jobs around your home</span></h1>
-      <p class="lede">We're a father-and-son team based on Pitkerro Road. Painting, joinery, fencing, gardens, repairs and now plumbing, for homes, landlords and letting agents across Dundee and the coast. The people who quote are the people who turn up and do the work.</p>
+      <h1>Handyman in Dundee<span>Dundee handyman now offering plumbing services for 2026. All trades covered.</span></h1>
+      <p class="lede">GB Fixit Handyman Services is your local, friendly handyman business covering Dundee and surrounding areas. Father and son Kris and Gary take on everything from hanging doors to mowing lawns: no job too big or small, and the people who quote are the people who do the work.</p>
       <div class="hero-ctas">
         <a class="btn btn-yellow" href="#quote">Get a free quote</a>
         <a class="btn btn-line" href="tel:+447740443180">Call Kris 07740 443180</a>
@@ -327,9 +332,9 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
       </div>
     </div>
     <div class="hero-photo">
-      <div class="ph" role="img" aria-label="Photo placeholder">[PHOTO: Kris and Gary on a job, with the van]</div>
+      <div class="ph" role="img" aria-label="Photo placeholder">[PHOTO: Kris and Gary on a job in Dundee, with the van]</div>
       <div class="hero-badge">
-        <span class="ico"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FECC00" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <span class="ico"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFDE11" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
         <p><strong>Free written quote</strong>, every step set out before work starts.</p>
       </div>
     </div>
@@ -341,9 +346,9 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
     <div class="sec-head">
       <div>
         <p class="eyebrow">What we do</p>
-        <h2>Our handyman services</h2>
+        <h2>Handyman Dundee services</h2>
       </div>
-      <p>Pick a service to see typical jobs, recent work and photos. Not sure which one fits? <a href="#quote">Tell us about the job</a> and we'll take a look.</p>
+      <p>From odd jobs around the house to bigger projects, our handyman services cover property maintenance, painting and decorating, joinery, fencing, gardens and outbuildings. Not sure which fits? <a href="#quote">Tell us about the job</a>.</p>
     </div>
 
     <div class="services">
@@ -354,7 +359,7 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
           <p>Inside and out, left tidy at the end of every day.</p>
           <ul>
             <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Full room redecoration and wallpapering</li>
-            <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Roughcast, windows, doors and fascias</li>
+            <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Gloss, staining, varnishing and exterior roughcast</li>
           </ul>
           <span class="arrow-link">Painting &amp; decorating <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
@@ -368,6 +373,7 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
           <ul>
             <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Doors, skirting, facings and frames</li>
             <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Cupboards, shelving and partitions</li>
+            <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Garages and outbuildings</li>
           </ul>
           <span class="arrow-link">Joinery <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
@@ -390,10 +396,10 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
         <div class="ph" role="img" aria-label="Photo placeholder">[PHOTO: garden makeover, patio and planters]</div>
         <div class="svc-body">
           <h3>Gardens &amp; landscaping</h3>
-          <p>Looked after all year, or made over and planned with you.</p>
+          <p>Mowing, weeding, hedges and trees all year, or a full makeover.</p>
           <ul>
             <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Patios, turf, planters and bin stores</li>
-            <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Paths and monoblock relaid</li>
+            <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tree pruning and removal, paths repaired</li>
           </ul>
           <span class="arrow-link">Gardens <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
@@ -403,10 +409,10 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
         <div class="ph" role="img" aria-label="Photo placeholder">[PHOTO: new guttering and fascias]</div>
         <div class="svc-body">
           <h3>Property maintenance</h3>
-          <p>Gutters, leaks, sash windows and the odd-jobs list.</p>
+          <p>General domestic repairs, gutters, leaks and the odd-jobs list.</p>
           <ul>
             <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Gutters, downpipes and fascias</li>
-            <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Other trades organised for you</li>
+            <li><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Stone and brick cleaning, repointing, rubbish clearance</li>
           </ul>
           <span class="arrow-link">Property maintenance <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
@@ -428,17 +434,35 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
   </div>
 </section>
 
+<section class="section cream" data-od-id="recent-work">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Recent work</p>
+        <h2>Some of our recent handyman work in Dundee</h2>
+      </div>
+      <p>Joinery, drywall and decorating, with all trades project managed: electrics, plumbing and plasterers, through one point of contact.</p>
+    </div>
+    <div class="gallery">
+      <div class="ph" role="img" aria-label="Photo placeholder">[PHOTO: fitted kitchen]</div>
+      <div class="ph" role="img" aria-label="Photo placeholder">[PHOTO: new fence and side gate]</div>
+      <div class="ph" role="img" aria-label="Photo placeholder">[PHOTO: decking or patio]</div>
+      <div class="ph" role="img" aria-label="Photo placeholder">[PHOTO: redecorated living room]</div>
+    </div>
+  </div>
+</section>
+
 <section class="section landlords" data-od-id="landlords">
   <div class="wrap">
     <div>
       <p class="eyebrow">For landlords &amp; letting agents</p>
-      <h2>Rental properties kept let-ready</h2>
+      <h2>Rental properties kept let&#8209;ready</h2>
       <p class="lede">We work with local estate agents, management companies and landlords across Dundee. One call covers joinery, decorating, gardens, repairs and plumbing, with Kris as your single point of contact.</p>
       <ul class="ll-list">
-        <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FECC00" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Void turnarounds between tenants</li>
-        <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FECC00" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Repairs from check-out reports</li>
-        <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FECC00" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Repainting walls and woodwork</li>
-        <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FECC00" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Rubbish and old furniture cleared</li>
+        <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFDE11" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Void turnarounds between tenants</li>
+        <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFDE11" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Repairs from check-out reports</li>
+        <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFDE11" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Repainting walls and woodwork</li>
+        <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFDE11" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Rubbish and old furniture cleared</li>
       </ul>
       <a class="btn btn-white" href="/landlord-property-maintenance-dundee">Landlord services</a>
     </div>
@@ -446,7 +470,7 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
   </div>
 </section>
 
-<section class="section cream" data-od-id="how-we-work">
+<section class="section" data-od-id="how-we-work">
   <div class="wrap">
     <div class="sec-head">
       <div>
@@ -484,8 +508,8 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <p class="eyebrow" style="color:#D6E2EE">Reviews</p>
-        <h2>What our customers say</h2>
+        <p class="eyebrow" style="color:#D6E2EE">Proud to be part of the Dundee Trusted Trader scheme</p>
+        <h2>Our happy customers</h2>
       </div>
       <div class="scores">
         <div class="score"><b>9.8/10</b><span>59 reviews, Reference Line</span></div>
@@ -495,8 +519,23 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
     <div class="quotes">
       <figure class="quote">
         <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+        <blockquote>“I have had Gary and Kris do work for me on two occasions, to do interior decorating and secondly to revamp my back garden. Always friendly, punctual and very good results.”</blockquote>
+        <figcaption><strong>Kate</strong> · Dundee</figcaption>
+      </figure>
+      <figure class="quote">
+        <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
         <blockquote>“Gary and Kris are a father son duo. They're genuinely the most positive, proactive, happy tradies I've ever experienced.”</blockquote>
         <figcaption><strong>Cara-Anne M.</strong> · Google, Jun 2026</figcaption>
+      </figure>
+      <figure class="quote">
+        <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+        <blockquote>“Both Gary and Kris worked to install a new fence for us. Before work began we were given all the information needed to make our decision.”</blockquote>
+        <figcaption><strong>Kathleen</strong> · Dundee</figcaption>
+      </figure>
+      <figure class="quote">
+        <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+        <blockquote>“Very friendly and faultless work carried out in my home, small details matter to these guys!”</blockquote>
+        <figcaption><strong>Elaine</strong> · Invergowrie</figcaption>
       </figure>
       <figure class="quote">
         <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
@@ -505,8 +544,8 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
       </figure>
       <figure class="quote">
         <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
-        <blockquote>“They genuinely treated the works as though they were working at their own home.”</blockquote>
-        <figcaption><strong>Roberto M.</strong> · Google, 2026</figcaption>
+        <blockquote>“Gary at GB Fixit looks after my garden throughout the year and nothing is too much trouble.”</blockquote>
+        <figcaption><strong>Morag</strong> · Dundee</figcaption>
       </figure>
     </div>
     <div class="reviews-foot">
@@ -519,8 +558,8 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
   <div class="wrap">
     <div>
       <p class="eyebrow">Areas we cover</p>
-      <h2>Dundee and the coast</h2>
-      <p class="lede" style="margin:16px 0 26px">Based in Dundee, we work across the city and the surrounding towns.</p>
+      <h2>Handyman Dundee: areas covered</h2>
+      <p class="lede" style="margin:16px 0 26px">GB Fixit Handyman Services covers Dundee, Invergowrie, Birkhill, Broughty Ferry, Monifieth, Carnoustie, Arbroath, Tayport, Newport and Wormit.</p>
       <div class="area-cards">
         <a class="area-card" href="/handyman-broughty-ferry"><b>Broughty Ferry</b><span>Handyman in Broughty Ferry</span></a>
         <a class="area-card" href="/handyman-monifieth"><b>Monifieth</b><span>Handyman in Monifieth</span></a>
@@ -545,8 +584,8 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
     <div class="ph" role="img" aria-label="Photo placeholder">[PHOTO: Kris and Gary together]</div>
     <div>
       <p class="eyebrow">About GB Fixit</p>
-      <h2>Your local handymen, Kris and Gary</h2>
-      <p class="lede">GB Fixit is Kris and Gary Brown. When you book us, we're the people who quote, turn up and do the work, and Kris is your point of contact from first call to final invoice.</p>
+      <h2>Your local friendly handyman in Dundee</h2>
+      <p class="lede">GB Fixit is Kris and Gary Brown, a father-and-son team based on Pitkerro Road. When you book us, we're the people who quote, turn up and do the work, and Kris is your point of contact from first call to final invoice.</p>
       <ul>
         <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Member of the Dundee Trusted Trader scheme</li>
         <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E4D82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Reviewed by customers on Reference Line since 2017</li>
@@ -560,8 +599,8 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
 <section class="section quote-sec" id="quote" data-od-id="quote">
   <div class="wrap">
     <div>
-      <p class="eyebrow">Free quote</p>
-      <h2>Tell us about the job</h2>
+      <p class="eyebrow">Contact us</p>
+      <h2>Get a free quote</h2>
       <p class="lede" style="margin-top:16px">We'll arrange a visit and send a free, no-obligation written quote. For anything urgent, call Kris.</p>
       <div class="contact-card">
         <div class="contact-row">
@@ -609,8 +648,8 @@ form.qf { background: var(--cream); border-radius: 12px; padding: 34px; display:
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="/"><img src="assets/gb-fixit-logo.png" alt="GB Fixit Handyman Services" width="358" height="122"></a>
-        <p>Handyman in Dundee · Dundee Trusted Trader</p>
+        <a class="logo" href="/"><img src="assets/gb-fixit-logo.png" alt="Handyman Dundee - GB Fixit Handyman Services" width="358" height="122"></a>
+        <p>GB Fixit Handyman Services: your local handyman in Dundee and surrounding areas. Dundee Trusted Trader.</p>
         <p style="margin-top:10px"><a href="tel:+447740443180" style="color:#fff;font-weight:700">07740 443180</a><br><a href="mailto:kris@gbfixit.co.uk">kris@gbfixit.co.uk</a></p>
       </div>
       <div>

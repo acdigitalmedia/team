@@ -1,20 +1,20 @@
 :root {
   --bg: #ffffff;
   --surface: #ffffff;
-  --surface-warm: #F5F2EA;
+  --surface-warm: #FCF9E6;
   --fg: #1F2933;
   --fg-2: #0E4D82;
   --muted: #4A5562;
   --meta: #4A5562;
   --border: #E3DED2;
-  --border-soft: #EEEAE0;
-  --accent: #FECC00;
+  --border-soft: #F1EDDA;
+  --accent: #FFDE11;
   --accent-on: #0E4D82;
-  --accent-hover: #F2C230;
-  --accent-active: #E9C400;
+  --accent-hover: #F5D20A;
+  --accent-active: #E8C900;
   --brand-navy: #0E4D82;
-  --brand-navy-deep: #0F2236;
-  --brand-blue: #2F6BA3;
+  --brand-navy-deep: #0E2436;
+  --brand-blue: #2B6CA3;
   --font-display: "Barlow Semi Condensed", "Barlow", system-ui, sans-serif;
   --font-body: "Barlow", system-ui, sans-serif;
   --text-xs: 12px;

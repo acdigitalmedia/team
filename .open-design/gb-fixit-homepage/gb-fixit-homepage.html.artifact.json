@@ -16,8 +16,8 @@
   "supportingFiles": [
     "assets/gb-fixit-logo.png"
   ],
-  "createdAt": "2026-10-29T18:43:47.943Z",
-  "updatedAt": "2026-10-29T18:43:48.043Z",
+  "createdAt": "2026-10-29T18:53:30.759Z",
+  "updatedAt": "2026-10-29T18:53:30.814Z",
   "sourceSkillId": "od:prototype:web-prototype",
   "designSystemId": "user:gb-fixit",
   "metadata": {
@@ -25,8 +25,8 @@
       {
         "path": ".open-design/gb-fixit-homepage/exports/gb-fixit-homepage.html",
         "format": "standalone",
-        "bytes": 88932,
-        "exportedAt": "2026-10-29T18:43:48.043Z"
+        "bytes": 91812,
+        "exportedAt": "2026-10-29T18:53:30.814Z"
       }
     ],
     "shares": [
