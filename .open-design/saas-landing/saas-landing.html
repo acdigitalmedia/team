@@ -36,7 +36,7 @@
     section.wrap { padding: 80px 32px; }
     section.areas.wrap { padding: 0 32px 72px; }
     .eyebrow { font-family: ui-monospace, monospace; color: var(--accent); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 18px; display: block; }
-    .hero h1 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(56px, 8vw, 104px); line-height: .92; letter-spacing: 0; max-width: 12ch; margin: 0 0 24px; }
+    .hero h1 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(56px, 7vw, 96px); line-height: .92; letter-spacing: 0; max-width: 12ch; margin: 0 0 24px; }
     .hero h1 span { color: var(--accent); }
     .hero .sub { font-size: 21px; font-weight: 600; color: var(--fg); margin: 0 0 10px; }
     .hero p { font-size: 19px; color: var(--muted); max-width: 58ch; margin: 0 0 36px; }
@@ -118,6 +118,48 @@
     .closing { background: #0E2436; }
     footer.wrap { max-width: none; background: #0B1D30; color: #A9BED2; }
     footer a:hover { color: var(--yellow); }
+    /* ---- photo slots ---- */
+    .photo { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; padding: 20px; background: #DFE9F3; color: #0E4D82; border: 2px dashed #9DB6CE; border-radius: 10px; }
+    .photo b { font-size: 15px; font-weight: 700; }
+    .photo small { font-size: 12px; color: #4A5562; font-family: ui-monospace, monospace; }
+    .hero-band .photo { background: rgba(255,255,255,.08); color: #fff; border-color: rgba(255,255,255,.35); }
+    .hero-band .photo small { color: #BFD3E6; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+    .hero-photo { position: relative; }
+    .hero-photo .photo { height: 460px; border-radius: 14px; }
+    .hero-photo .badge { position: absolute; left: -22px; bottom: 28px; background: #fff; color: var(--fg); border-radius: 10px; padding: 12px 16px; box-shadow: 0 12px 30px rgba(0,0,0,.25); display: flex; gap: 12px; align-items: center; }
+    .hero-photo .badge b { font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1; color: var(--accent); }
+    .hero-photo .badge span { font-size: 13px; color: var(--muted); line-height: 1.3; }
+    .tier .photo { height: 170px; margin: -32px -32px 24px; border-radius: 0; border-width: 0 0 2px; }
+    .tier.featured .photo { background: rgba(255,255,255,.08); color: #fff; border-color: rgba(255,255,255,.3); }
+    .tier.featured .photo small { color: #BFD3E6; }
+    .work h2 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 48px; line-height: 1; margin: 0 0 12px; color: var(--accent); }
+    .work .lede { color: var(--muted); margin: 0 0 36px; max-width: 60ch; }
+    .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 240px; gap: 16px; }
+    .work-grid figure { margin: 0; display: flex; flex-direction: column; }
+    .work-grid figure.big { grid-column: span 2; grid-row: span 2; }
+    .work-grid .photo { flex: 1; border-radius: 10px 10px 0 0; }
+    .work-grid figcaption { background: var(--accent); color: #fff; padding: 10px 14px; border-radius: 0 0 10px 10px; font-size: 14px; display: flex; justify-content: space-between; gap: 10px; }
+    .work-grid figcaption span { color: #BFD3E6; white-space: nowrap; }
+    .meet { background: #EEF4FA; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .meet-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: center; }
+    .meet .photo { height: 420px; }
+    .meet h2 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 48px; line-height: 1; margin: 0 0 16px; color: var(--accent); }
+    .meet p { color: var(--muted); font-size: 18px; margin: 0 0 14px; }
+    .meet .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 22px 0 26px; }
+    .meet .pair .photo { height: 150px; }
+    @media (max-width: 900px) {
+      .hero-grid, .meet-grid { grid-template-columns: 1fr; gap: 36px; }
+      .hero-photo .photo { height: 320px; }
+      .hero-photo .badge { left: 12px; bottom: 12px; }
+      .work-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 200px; }
+      .meet .photo { height: 300px; }
+    }
+    @media (max-width: 560px) {
+      .work-grid { grid-template-columns: 1fr; grid-auto-rows: 220px; }
+      .work-grid figure.big { grid-column: auto; grid-row: span 1; }
+      .work h2, .meet h2 { font-size: 38px; }
+    }
     @media (max-width: 900px) { nav a { display: none; } }
     @media (max-width: 800px) { .feature-grid, .tiers { grid-template-columns: 1fr; } .tiers { gap: 28px; } }
     @media (max-width: 560px) {
@@ -149,6 +191,8 @@
       </nav>
     </header>
     <section class="hero" data-od-id="hero">
+     <div class="hero-grid">
+     <div>
       <span class="eyebrow">GB Fixit Handyman Services · Dundee</span>
       <h1>Handyman in <span>Dundee.</span></h1>
       <p class="sub">Dundee handyman now offering plumbing services for 2026. All trades covered.</p>
@@ -157,6 +201,12 @@
         <a class="btn btn-primary" href="#quote">Get a free quote</a>
         <a class="btn-link" href="tel:+447740443180">Or call Kris on 07740 443180 →</a>
       </div>
+     </div>
+     <div class="hero-photo">
+      <div class="photo " role="img" aria-label="Photo: Kris and Gary with the van"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Kris and Gary with the van</b><small>Landscape · 1600 × 1200</small></div>
+      <div class="badge"><b>9.8/10</b><span>59 reviews on<br>Reference Line</span></div>
+     </div>
+     </div>
     </section>
   </div>
   </div>
@@ -196,6 +246,7 @@
     <p class="lede">From odd jobs around the house to bigger projects. Pick a trade to see typical jobs and recent work.</p>
     <div class="tiers">
       <div class="tier">
+        <div class="photo " role="img" aria-label="Photo: Inside job: decorated room or new doors"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Inside job: decorated room or new doors</b><small>1200 × 800</small></div>
         <h3>Inside</h3>
         <p class="for">Rooms, doors, kitchens and bathrooms.</p>
         <ul>
@@ -206,6 +257,7 @@
         <a class="btn btn-secondary" href="#quote">Quote for inside work</a>
       </div>
       <div class="tier featured">
+        <div class="photo " role="img" aria-label="Photo: Empty flat after a turnaround"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Empty flat after a turnaround</b><small>1200 × 800</small></div>
         <h3>Rentals</h3>
         <p class="for">Let-ready properties, one point of contact.</p>
         <ul>
@@ -217,6 +269,7 @@
         <a class="btn btn-primary" href="#quote">Talk to Kris</a>
       </div>
       <div class="tier">
+        <div class="photo " role="img" aria-label="Photo: Outside job: new fence or garden"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Outside job: new fence or garden</b><small>1200 × 800</small></div>
         <h3>Outside</h3>
         <p class="for">Fences, gardens, gutters and outbuildings.</p>
         <ul>
@@ -225,6 +278,36 @@
           <li><a href="/property-maintenance-dundee">Gutters, fascias &amp; repointing</a></li>
         </ul>
         <a class="btn btn-secondary" href="#quote">Quote for outside work</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="work wrap" id="work" data-od-id="recent-work">
+    <h2>Recent handyman work in Dundee</h2>
+    <p class="lede">Real jobs from the last year. Swap each placeholder for a before/after or finished photo from the job.</p>
+    <div class="work-grid">
+      <figure class="big"><div class="photo " role="img" aria-label="Photo: Garage renovation"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Garage renovation</b><small>1600 × 1200</small></div><figcaption>Garage renovated: new roof, timbers, doors realigned<span>Jun 2026</span></figcaption></figure>
+      <figure><div class="photo " role="img" aria-label="Photo: Fence and decking"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Fence and decking</b><small>1200 × 900</small></div><figcaption>Fence and decking repaired · DD3<span>Oct 2026</span></figcaption></figure>
+      <figure><div class="photo " role="img" aria-label="Photo: Mural wallpaper wall"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Mural wallpaper wall</b><small>1200 × 900</small></div><figcaption>Living room and bedroom redecorated<span>Jun 2026</span></figcaption></figure>
+      <figure><div class="photo " role="img" aria-label="Photo: Patio and slate gravel"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Patio and slate gravel</b><small>1200 × 900</small></div><figcaption>Drive and patio power-washed, slate laid<span>Jun 2026</span></figcaption></figure>
+      <figure><div class="photo " role="img" aria-label="Photo: Roughcast before / after"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Roughcast before / after</b><small>1200 × 900</small></div><figcaption>Roughcast exterior repainted · DD6<span>Sep 2025</span></figcaption></figure>
+      <figure><div class="photo " role="img" aria-label="Photo: Side gate"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Side gate</b><small>1200 × 900</small></div><figcaption>Rotten gate boards replaced, fence painted · DD2<span>Sep 2026</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="meet" id="about" data-od-id="meet">
+    <div class="wrap meet-grid">
+      <div class="photo " role="img" aria-label="Photo: Kris and Gary together"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Kris and Gary together</b><small>Portrait or square · 1200 × 1400</small></div>
+      <div>
+        <span class="eyebrow" style="color:var(--accent)">Meet the team</span>
+        <h2>Kris and Gary Brown</h2>
+        <p>GB Fixit is a father-and-son team based on Pitkerro Road in Dundee. When you book us, we're the people who quote, turn up and do the work.</p>
+        <p>Kris is your point of contact from first call to final invoice, and for the jobs that need another trade, we have a trusted network of plasterers, electricians and plumbers.</p>
+        <div class="pair">
+          <div class="photo " role="img" aria-label="Photo: Kris at work"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Kris at work</b><small>800 × 600</small></div>
+          <div class="photo " role="img" aria-label="Photo: Gary at work"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Gary at work</b><small>800 × 600</small></div>
+        </div>
+        <a class="btn btn-secondary" href="/about">More about us</a>
       </div>
     </div>
   </section>

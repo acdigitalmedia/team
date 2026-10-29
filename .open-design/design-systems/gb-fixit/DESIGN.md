@@ -28,5 +28,8 @@ Real job photos: before/afters, finished rooms, fences, gardens, Kris and Gary a
 ## Layout & Spacing
 1200px max container, 24px gutters. Sections alternate white and pale blue with 64–72px vertical padding (40px on phones). Buttons 6px radius, min 44px tall; cards 8–10px radius with a 1px #DCE5EE border and no heavy shadows. Area chips are pills (999px) with a white fill and pale-blue border. Header is a solid navy bar with logo, uppercase nav and a yellow "Call Kris" button.
 
+## Page pattern (approved homepage, Oct 2026)
+Based on the remixed Open Design "saas-landing" example. Navy (#0E4D82) hero band with a soft lighter glow, white headline with the second line in yellow, yellow primary button, and a large photo of Kris and Gary on the right with a white rating badge. Then: three numbered points on pale blue (#EEF4FA) with navy number circles; a mid-blue (#2B6CA3) reviews strip; white service cards with a 6px navy top edge and a photo slot at the top (the featured card is solid navy with a yellow top edge); a recent-work photo mosaic with navy captions (job, area, date); a pale-blue "Meet Kris and Gary" section; deep navy (#0E2436) closing band and darker footer. Photo slots are dashed pale-blue boxes labelled with what goes in them and a size.
+
 ## Agent Prompt Guide
 Build on white with pale blue alternate bands, bold uppercase navy headings in Barlow Semi Condensed and Barlow body. Use yellow only for the main call to action (navy text on it), at most twice per screen. Keep it practical: clear service list, real reviews, Kris's number 07740 443180 visible at the top and bottom, and a free-quote form. Use real GB Fixit facts only and label missing photos as placeholders.
