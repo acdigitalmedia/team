@@ -1,0 +1,26 @@
+:root{--navy:#0E4D82;--navy-deep:#0E2436;--navy-ink:#0B1D30;--blue:#2B6CA3;--yellow:#FFDE11;--yellow-hover:#F5D20A;--pale:#EEF4FA;--pale-2:#DFE9F3;--pale-3:#C9D9E8;--ink:#1F2933;--slate:#4A5562;--line:#DCE5EE;--display:"Barlow Semi Condensed","Barlow",system-ui,sans-serif;--body:"Barlow",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+a{color:var(--navy)}a:hover{color:var(--navy-ink)}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+h1,h2,h3{font-family:var(--display);font-weight:700;color:var(--navy);margin:0;text-transform:uppercase;letter-spacing:.5px}
+p{margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--slate)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 24px;border-radius:6px;font-weight:600;font-size:16px;text-transform:uppercase;letter-spacing:1px;text-decoration:none;border:2px solid transparent}
+.btn-yellow{background:var(--yellow);color:var(--navy)}.btn-yellow:hover{background:var(--yellow-hover);color:var(--navy-ink)}
+.btn-line{border-color:var(--navy);color:var(--navy)}.btn-line:hover{background:var(--navy);color:#fff}
+.btn-white{border-color:#fff;color:#fff}.btn-white:hover{background:#fff;color:var(--navy)}
+.ph{background:var(--pale-2);border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--slate);font-weight:600;font-size:15px;padding:20px}
+.header{background:var(--navy);color:#fff}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:84px}
+.logo img{height:58px;width:auto;display:block}
+.nav{display:flex;gap:4px}
+.nav a{color:#fff;text-decoration:none;font-weight:600;font-size:15px;text-transform:uppercase;letter-spacing:1px;padding:10px 12px;border-radius:6px}
+.nav a:hover,.nav a[aria-current]{background:rgba(255,255,255,.12);color:#fff}
+.crumbs{font-size:14px;color:var(--slate)}.crumbs a{color:var(--slate)}
+.trust{display:flex;flex-wrap:wrap;gap:12px 32px;font-size:15px;color:var(--slate)}
+.trust b{display:block;font-family:var(--display);font-weight:700;font-size:30px;line-height:1.1;color:var(--navy)}
+.ico-check{flex:0 0 18px;margin-top:4px}
+@media (max-width:1080px){.nav{display:none}}
+@media (max-width:640px){.wrap{padding:0 16px}.logo img{height:46px}.header .wrap{min-height:72px}.header .btn{padding:10px 14px;font-size:14px}}
