@@ -176,6 +176,20 @@
       .work-grid figure.big { grid-column: auto; grid-row: span 1; }
       .work h2, .meet h2 { font-size: 38px; }
     }
+    /* ---- inside / outside + rentals strip ---- */
+    .tiers { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .tier { padding: 36px; }
+    .tier .photo { height: 260px; margin: -36px -36px 26px; }
+    .tier h3 { font-size: 40px; }
+    .tier .for { font-size: 16px; }
+    .tier ul { font-size: 16.5px; }
+    .rentals { margin-top: 24px; background: var(--accent); color: #fff; border-radius: 10px; border-left: 6px solid var(--yellow); padding: 22px 28px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .rentals-tag { display: inline-block; background: var(--yellow); color: var(--fg); font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+    .rentals h3 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 28px; line-height: 1; margin: 0 0 4px; }
+    .rentals p { margin: 0; color: #D6E2EE; font-size: 15.5px; max-width: 64ch; }
+    .rentals .btn-secondary { color: #fff; border-color: #fff; white-space: nowrap; flex: 0 0 auto; }
+    .rentals .btn-secondary:hover { background: #fff; color: var(--accent); }
+    @media (max-width: 800px) { .tiers { grid-template-columns: 1fr; } .rentals { flex-direction: column; align-items: flex-start; } .rentals .btn { width: 100%; } .tier .photo { height: 200px; } }
     @media (max-width: 900px) { nav a { display: none; } }
     @media (max-width: 800px) { .feature-grid, .tiers { grid-template-columns: 1fr; } .tiers { gap: 28px; } }
     @media (max-width: 560px) {
@@ -280,39 +294,37 @@
     <p class="lede">From odd jobs around the house to bigger projects. Pick a trade to see typical jobs and recent work.</p>
     <div class="tiers">
       <div class="tier">
-        <div class="photo " role="img" aria-label="Photo: Inside job: decorated room or new doors"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Inside job: decorated room or new doors</b><small>1200 × 800</small></div>
+        <div class="photo" role="img" aria-label="Photo: Inside job: decorated room or new doors"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Inside job: decorated room or new doors</b><small>1600 × 900</small></div>
         <h3>Inside</h3>
-        <p class="for">Rooms, doors, kitchens and bathrooms.</p>
+        <p class="for">Rooms, doors, kitchens and bathrooms, and the odd jobs list.</p>
         <ul>
           <li><a href="/painters-decorators-dundee">Painting &amp; decorating</a></li>
-          <li><a href="/joiner-dundee">Joinery</a></li>
+          <li><a href="/joiner-dundee">Joinery: doors, skirting, cupboards</a></li>
           <li><a href="/plumber-dundee">Plumbing <span class="new">New 2026</span></a></li>
+          <li><a href="/property-maintenance-dundee">Repairs &amp; property maintenance</a></li>
         </ul>
-        <a class="btn btn-secondary" href="#quote">Quote for inside work</a>
-      </div>
-      <div class="tier featured">
-        <div class="photo " role="img" aria-label="Photo: Empty flat after a turnaround"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Empty flat after a turnaround</b><small>1200 × 800</small></div>
-        <h3>Rentals</h3>
-        <p class="for">Let-ready properties, one point of contact.</p>
-        <ul>
-          <li><a href="/landlord-property-maintenance-dundee">Landlords &amp; letting agents</a></li>
-          <li><a href="/landlord-property-maintenance-dundee">Void turnarounds</a></li>
-          <li><a href="/landlord-property-maintenance-dundee">Check-out repairs</a></li>
-          <li><a href="/property-maintenance-dundee">Property maintenance</a></li>
-        </ul>
-        <a class="btn btn-primary" href="#quote">Talk to Kris</a>
+        <a class="btn btn-primary" href="#quote">Quote for inside work</a>
       </div>
       <div class="tier">
-        <div class="photo " role="img" aria-label="Photo: Outside job: new fence or garden"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Outside job: new fence or garden</b><small>1200 × 800</small></div>
+        <div class="photo" role="img" aria-label="Photo: Outside job: new fence or garden"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Outside job: new fence or garden</b><small>1600 × 900</small></div>
         <h3>Outside</h3>
-        <p class="for">Fences, gardens, gutters and outbuildings.</p>
+        <p class="for">Fences, gardens, gutters, garages and outbuildings.</p>
         <ul>
           <li><a href="/fencing-dundee">Fencing &amp; gates</a></li>
           <li><a href="/gardener-dundee">Gardens &amp; landscaping</a></li>
           <li><a href="/property-maintenance-dundee">Gutters, fascias &amp; repointing</a></li>
+          <li><a href="/joiner-dundee">Garages &amp; outbuildings</a></li>
         </ul>
-        <a class="btn btn-secondary" href="#quote">Quote for outside work</a>
+        <a class="btn btn-primary" href="#quote">Quote for outside work</a>
       </div>
+    </div>
+    <div class="rentals">
+      <div class="rentals-text">
+        <span class="rentals-tag">For landlords &amp; letting agents</span>
+        <h3>Rentals</h3>
+        <p>Let-ready properties with one point of contact: void turnarounds, check-out repairs and ongoing maintenance.</p>
+      </div>
+      <a class="btn btn-secondary" href="/landlord-property-maintenance-dundee">Landlord services</a>
     </div>
   </section>
 

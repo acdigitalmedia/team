@@ -16,8 +16,8 @@
   "supportingFiles": [
     "assets/gb-fixit-logo.png"
   ],
-  "createdAt": "2026-10-29T20:52:32.331Z",
-  "updatedAt": "2026-10-29T20:52:32.372Z",
+  "createdAt": "2026-10-29T21:00:36.981Z",
+  "updatedAt": "2026-10-29T21:00:37.078Z",
   "sourceSkillId": "od:prototype:saas-landing:example",
   "designSystemId": "user:gb-fixit",
   "metadata": {
@@ -26,8 +26,8 @@
       {
         "path": ".open-design/saas-landing/exports/saas-landing.html",
         "format": "standalone",
-        "bytes": 53009,
-        "exportedAt": "2026-10-29T20:52:32.371Z"
+        "bytes": 53977,
+        "exportedAt": "2026-10-29T21:00:37.078Z"
       }
     ],
     "shares": [
