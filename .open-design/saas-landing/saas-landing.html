@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Handyman Dundee | GB Fixit Handyman Services</title>
+  <meta name="description" content="Local, friendly handyman in Dundee covering Dundee and surrounding areas. Kris and Gary at GB Fixit do everything from hanging doors to mowing lawns, and now plumbing. Free quotes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F6F8FA; --fg: #0E2436; --muted: #4A5562; --border: #DCE5EE;
+      --accent: #0E4D82; --surface: #ffffff; --yellow: #FFDE11;
+      --display: 'Barlow Semi Condensed', 'Barlow', system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 'Barlow', system-ui, sans-serif; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; }
+    .logo { display: block; line-height: 0; }
+    .logo img { height: 50px; width: auto; }
+    nav { display: flex; align-items: center; }
+    nav a { color: var(--fg); text-decoration: none; margin-left: 22px; font-size: 15px; font-weight: 600; }
+    nav a:hover { color: var(--accent); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; font: inherit; cursor: pointer; padding: 12px 22px; border-radius: 6px; font-weight: 700; text-decoration: none; min-height: 48px; text-transform: uppercase; letter-spacing: .06em; font-size: 15px; }
+    .btn-primary { background: var(--yellow); color: var(--fg); border: 2px solid var(--yellow); }
+    .btn-primary:hover { background: #F5D20A; border-color: #F5D20A; }
+    .btn-secondary { background: transparent; color: var(--fg); border: 2px solid var(--fg); }
+    .btn-secondary:hover { background: var(--fg); color: #fff; }
+    .btn-link { background: transparent; border: none; color: var(--accent); padding: 12px 0; font-weight: 700; text-decoration: none; }
+    .btn-link:hover { text-decoration: underline; }
+    section { padding: 80px 0; }
+    .hero { padding: 88px 0 100px; }
+    section.wrap { padding: 80px 32px; }
+    section.areas.wrap { padding: 0 32px 72px; }
+    .eyebrow { font-family: ui-monospace, monospace; color: var(--accent); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 18px; display: block; }
+    .hero h1 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(56px, 8vw, 104px); line-height: .92; letter-spacing: 0; max-width: 12ch; margin: 0 0 24px; }
+    .hero h1 span { color: var(--accent); }
+    .hero .sub { font-size: 21px; font-weight: 600; color: var(--fg); margin: 0 0 10px; }
+    .hero p { font-size: 19px; color: var(--muted); max-width: 58ch; margin: 0 0 36px; }
+    .hero .cta { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+    .features { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .feature h3 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 24px; line-height: 1.05; margin: 0 0 10px; }
+    .feature .num { font-family: ui-monospace, monospace; color: var(--accent); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 12px; display: block; }
+    .feature p { margin: 0; color: var(--muted); font-size: 15.5px; }
+    .proof { text-align: center; }
+    .proof h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin: 0 0 28px; font-weight: 600; }
+    .logos { display: flex; justify-content: center; gap: 56px; flex-wrap: wrap; }
+    .logos div { text-align: center; }
+    .logos b { display: block; font-family: var(--display); font-weight: 800; font-size: 40px; line-height: 1; color: var(--fg); }
+    .logos span { font-size: 14px; color: var(--muted); font-weight: 600; }
+    .quote { max-width: 760px; margin: 44px auto 0; font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: 28px; line-height: 1.15; }
+    .quote cite { display: block; font-family: 'Barlow', sans-serif; text-transform: none; font-style: normal; font-weight: 500; font-size: 15px; color: var(--muted); margin-top: 10px; }
+    .pricing h2 { text-align: center; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 48px; line-height: 1; margin: 0 0 12px; }
+    .pricing .lede { text-align: center; color: var(--muted); margin: 0 0 48px; }
+    .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .tier { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 32px; display: flex; flex-direction: column; }
+    .tier.featured { border: 2px solid var(--accent); position: relative; }
+    .tier.featured::before { content: 'For agents & landlords'; position: absolute; top: -13px; left: 24px; background: var(--accent); color: white; padding: 3px 12px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+    .tier h3 { margin: 0 0 6px; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 30px; line-height: 1; }
+    .tier .for { color: var(--muted); margin: 0; font-size: 15px; }
+    .tier ul { list-style: none; padding: 0; margin: 18px 0 24px; font-size: 15.5px; flex: 1; }
+    .tier ul li { border-top: 1px solid var(--border); }
+    .tier ul li:first-child { border-top: none; }
+    .tier ul a { display: flex; justify-content: space-between; padding: 9px 0; text-decoration: none; font-weight: 600; }
+    .tier ul a:hover { color: var(--accent); }
+    .tier ul a::after { content: '→'; color: var(--accent); }
+    .tier ul .new { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; background: var(--yellow); padding: 1px 6px; border-radius: 4px; margin-left: 8px; }
+    .tier .btn { width: 100%; }
+    .areas { text-align: center; padding-top: 0; }
+    .areas p { color: var(--muted); margin: 0 auto; max-width: 70ch; }
+    .areas p a { color: var(--accent); font-weight: 700; }
+    .closing { background: var(--accent); color: white; text-align: center; }
+    .closing h2 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 56px; line-height: 1; margin: 0 0 14px; }
+    .closing p { opacity: 0.9; margin: 0 0 28px; font-size: 18px; }
+    .closing .cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .closing .btn-secondary { color: #fff; border-color: #fff; }
+    .closing .btn-secondary:hover { background: #fff; color: var(--accent); }
+    footer { padding: 28px 0; color: var(--muted); font-size: 14px; text-align: center; }
+    footer a { text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+    @media (max-width: 900px) { nav a { display: none; } }
+    @media (max-width: 800px) { .feature-grid, .tiers { grid-template-columns: 1fr; } .tiers { gap: 28px; } }
+    @media (max-width: 560px) {
+      .wrap { padding: 0 18px; }
+      section.wrap { padding: 56px 18px; }
+      section.areas.wrap { padding: 0 18px 56px; }
+      .logo img { height: 40px; }
+      header .btn { padding: 10px 12px; font-size: 13px; }
+      .hero { padding: 48px 0 64px; }
+      .hero .cta .btn { width: 100%; }
+      .logos { gap: 28px; }
+      .quote { font-size: 22px; }
+      .pricing h2, .closing h2 { font-size: 38px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header data-od-id="topnav">
+      <a class="logo" href="/" aria-label="GB Fixit Handyman Services, home"><img src="assets/gb-fixit-logo.png" alt="Handyman Dundee - GB Fixit Handyman Services" width="358" height="122"></a>
+      <nav aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#areas">Areas</a>
+        <a href="/about">About</a>
+        <a href="/reviews">Reviews</a>
+        <a href="/contact">Contact</a>
+        <a class="btn btn-secondary" href="tel:+447740443180" style="margin-left: 18px; display:inline-flex">Call 07740 443180</a>
+      </nav>
+    </header>
+    <section class="hero" data-od-id="hero">
+      <span class="eyebrow">GB Fixit Handyman Services · Dundee</span>
+      <h1>Handyman in <span>Dundee.</span></h1>
+      <p class="sub">Dundee handyman now offering plumbing services for 2026. All trades covered.</p>
+      <p>GB Fixit Handyman Services is your local, friendly handyman business covering Dundee and surrounding areas. Father and son Kris and Gary take on everything from hanging doors to mowing lawns.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#quote">Get a free quote</a>
+        <a class="btn-link" href="tel:+447740443180">Or call Kris on 07740 443180 →</a>
+      </div>
+    </section>
+  </div>
+
+  <section class="features" id="how" data-od-id="features">
+    <div class="wrap feature-grid">
+      <div class="feature">
+        <span class="num">01</span>
+        <h3>A written quote, first</h3>
+        <p>We visit, talk through the options and send a free written quote that sets out each step, the materials and the labour.</p>
+      </div>
+      <div class="feature">
+        <span class="num">02</span>
+        <h3>We start and finish when we say</h3>
+        <p>If anything changes, we explain it and agree it with you first. Kris is your point of contact from first call to final invoice.</p>
+      </div>
+      <div class="feature">
+        <span class="num">03</span>
+        <h3>Left tidy every day</h3>
+        <p>We clean up at the end of every day, not just the last one. "You would never have known there had been a tradesman in the house."</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof wrap" data-od-id="proof">
+    <h2>Reviewed by our customers on</h2>
+    <div class="logos">
+      <div><b>9.8/10</b><span>Reference Line · 59 reviews</span></div>
+      <div><b>5.0 ★</b><span>Google · 35 reviews</span></div>
+      <div><b>Trusted</b><span>Dundee Trusted Trader</span></div>
+    </div>
+    <p class="quote">“The most positive, proactive, happy tradies I've ever experienced.”<cite>Cara-Anne M., Google, Jun 2026</cite></p>
+  </section>
+
+  <section class="pricing wrap" id="services" data-od-id="services">
+    <h2>Handyman Dundee services</h2>
+    <p class="lede">From odd jobs around the house to bigger projects. Pick a trade to see typical jobs and recent work.</p>
+    <div class="tiers">
+      <div class="tier">
+        <h3>Inside</h3>
+        <p class="for">Rooms, doors, kitchens and bathrooms.</p>
+        <ul>
+          <li><a href="/painters-decorators-dundee">Painting &amp; decorating</a></li>
+          <li><a href="/joiner-dundee">Joinery</a></li>
+          <li><a href="/plumber-dundee">Plumbing <span class="new">New 2026</span></a></li>
+        </ul>
+        <a class="btn btn-secondary" href="#quote">Quote for inside work</a>
+      </div>
+      <div class="tier featured">
+        <h3>Rentals</h3>
+        <p class="for">Let-ready properties, one point of contact.</p>
+        <ul>
+          <li><a href="/landlord-property-maintenance-dundee">Landlords &amp; letting agents</a></li>
+          <li><a href="/landlord-property-maintenance-dundee">Void turnarounds</a></li>
+          <li><a href="/landlord-property-maintenance-dundee">Check-out repairs</a></li>
+          <li><a href="/property-maintenance-dundee">Property maintenance</a></li>
+        </ul>
+        <a class="btn btn-primary" href="#quote">Talk to Kris</a>
+      </div>
+      <div class="tier">
+        <h3>Outside</h3>
+        <p class="for">Fences, gardens, gutters and outbuildings.</p>
+        <ul>
+          <li><a href="/fencing-dundee">Fencing &amp; gates</a></li>
+          <li><a href="/gardener-dundee">Gardens &amp; landscaping</a></li>
+          <li><a href="/property-maintenance-dundee">Gutters, fascias &amp; repointing</a></li>
+        </ul>
+        <a class="btn btn-secondary" href="#quote">Quote for outside work</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="areas wrap" id="areas" data-od-id="areas">
+    <p>Covering Dundee, <a href="/handyman-broughty-ferry">Broughty Ferry</a>, <a href="/handyman-monifieth">Monifieth</a>, <a href="/handyman-carnoustie">Carnoustie</a>, Arbroath, Invergowrie, Birkhill, Tayport, Newport and Wormit.</p>
+  </section>
+
+  <section class="closing" id="quote" data-od-id="closing">
+    <div class="wrap">
+      <h2>One call. All trades covered.</h2>
+      <p>Free, no-obligation written quotes across Dundee and surrounding areas.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="/contact">Get a free quote</a>
+        <a class="btn btn-secondary" href="tel:+447740443180">Call Kris 07740 443180</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="wrap" data-od-id="footer">© 2026 GB Fixit Handyman Services · 32 Pitkerro Road, Dundee DD4 7EG · <a href="/about">About</a> · <a href="/reviews">Reviews</a> · <a href="/contact">Contact</a></footer>
+</body>
+</html>

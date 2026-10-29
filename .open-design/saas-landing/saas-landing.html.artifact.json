@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "GB Fixit Homepage: Clean landing (remix)",
+  "entry": ".open-design/saas-landing/saas-landing.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "standalone",
+    "site",
+    "png",
+    "jpeg",
+    "pdf"
+  ],
+  "supportingFiles": [
+    "assets/gb-fixit-logo.png"
+  ],
+  "createdAt": "2026-10-29T20:36:38.278Z",
+  "updatedAt": "2026-10-29T20:36:49.205Z",
+  "sourceSkillId": "od:prototype:saas-landing:example",
+  "designSystemId": "user:gb-fixit",
+  "metadata": {
+    "remixedFrom": "od:prototype:saas-landing:example",
+    "exports": [
+      {
+        "path": ".open-design/saas-landing/exports/saas-landing.html",
+        "format": "standalone",
+        "bytes": 37466,
+        "exportedAt": "2026-10-29T20:36:38.352Z"
+      }
+    ],
+    "shares": [
+      {
+        "provider": "claude-artifact",
+        "url": "https://claude.ai/artifact/3yB6mDzUYAAXeAjwCZDutM",
+        "publishedAt": "2026-10-29T20:36:49.203Z",
+        "siteRef": "https://claude.ai/artifact/3yB6mDzUYAAXeAjwCZDutM"
+      }
+    ]
+  }
+}

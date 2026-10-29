@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "explorationId": "gb-fixit-handyman-services-homepage-gbfixit-co-u-2",
+  "title": "GB Fixit Handyman Services homepage (gbfixit.co.uk)…",
+  "brief": "GB Fixit Handyman Services homepage (gbfixit.co.uk), Dundee. Must feel masculine and like a real working tradesman's business, not a generic template, while keeping the brand colours (navy #0E4D82, yellow #FFDE11, deep navy #0E2436) and the logo. Content: H1 \"Handyman in Dundee\"; subline \"Dundee handyman now offering plumbing services for 2026. All trades covered.\"; intro \"GB Fixit Handyman Services is your local, friendly handyman business covering Dundee and surrounding areas. Father and son Kris and Gary take on everything from hanging doors to mowing lawns\"; CTAs Get a free quote / Call Kris 07740 443180; trust: 9.8/10 from 59 Reference Line reviews, 5.0 from 35 Google reviews, Dundee Trusted Trader; key section \"Handyman Dundee services\": Painting & decorating, Joinery, Fencing & gates, Gardens & landscaping, Property maintenance, Plumbing (new 2026), Landlords & letting agents, each linking to its page. Real recent jobs e.g. \"Fence and decking repaired, DD3, Oct 2026\"; \"Garage renovated: new roof, timbers replaced, doors realigned, Jun 2026\"; \"Roughcast exterior repainted, DD6, Sep 2025\". Review: \"The most positive, proactive, happy tradies I've ever experienced.\" Cara-Anne M., Google, Jun 2026. Photos are labelled placeholders.",
+  "skillId": "web-prototype",
+  "skillMode": "prototype",
+  "axis": "visual",
+  "designSystemId": "user:gb-fixit",
+  "designSystemName": "Design System Inspired by GB Fixit",
+  "designSystemSetAside": true,
+  "createdAt": "2026-10-29T20:33:36.846Z",
+  "directions": [
+    {
+      "id": "human-approachable",
+      "label": "Human / approachable — Airbnb / Duolingo systems",
+      "axis": "visual",
+      "summary": "Friendly and tactile without the generic cozy canvas",
+      "spec": "### Human / approachable — Airbnb / Duolingo systems  `(id: human-approachable)`\n\n**Mood:** Friendly and tactile without the generic cozy canvas. Uses a clean neutral background, product-led color system, generous radii, and clear hierarchy. Good for consumer tools, marketplaces, wellness, education, translation, AI assistants, and indie SaaS when the brand has not supplied a palette.\n\n**References:** Airbnb, Duolingo product surfaces, Miro, Mercury.\n\n**Palette (drop into `:root`):**\n\n```css\n:root {\n  --bg:      oklch(98% 0.004 240);\n  --surface: oklch(100% 0 0);\n  --fg:      oklch(20% 0.02 240);\n  --muted:   oklch(50% 0.018 240);\n  --border:  oklch(90% 0.006 240);\n  --accent:  oklch(56% 0.12 170);\n\n  --font-display: 'Söhne', 'Avenir Next', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;\n  --font-body:    -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;\n}\n```\n\n**Posture:**\n- sans display with strong weight contrast, system body for readability\n- comfortable radii (12–18px) paired with crisp grid alignment\n- primary action color plus a secondary/domain accent and clear status colors; use color to separate panels, states, and product moments\n- subtle elevation only on interactive cards; tasteful gradients/glows are allowed for hero/device/product moments, never as a full-page beige/pastel wash\n- avoid generic pastel/beige gradients; use real product screenshots, data, or labelled placeholders\n",
+      "entryPath": ".open-design/gb-fixit-handyman-services-homepage-gbfixit-co-u-2/human-approachable.html"
+    },
+    {
+      "id": "tech-utility",
+      "label": "Tech / utility — Datadog / GitHub",
+      "axis": "visual",
+      "summary": "Data-dense, monospace-friendly, dark or light + grid",
+      "spec": "### Tech / utility — Datadog / GitHub  `(id: tech-utility)`\n\n**Mood:** Data-dense, monospace-friendly, dark or light + grid. Made for engineers and operators who want information per square inch, not vibes.\n\n**References:** Datadog, GitHub, Cloudflare dashboard, Sentry.\n\n**Palette (drop into `:root`):**\n\n```css\n:root {\n  --bg:      oklch(98% 0.005 250);\n  --surface: oklch(100% 0 0);\n  --fg:      oklch(22% 0.02 240);\n  --muted:   oklch(50% 0.018 240);\n  --border:  oklch(90% 0.008 240);\n  --accent:  oklch(58% 0.16 145);\n\n  --font-display: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif;\n  --font-body:    -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif;\n  --font-mono:    'JetBrains Mono', 'IBM Plex Mono', ui-monospace, Menlo, monospace;\n}\n```\n\n**Posture:**\n- sans display + sans body (one family) is OK here — utility trumps editorial\n- tabular numerics everywhere, mono for code / IDs / hashes\n- dense tables with hairline borders, no row striping\n- inline status pills (success / warn / danger) with restrained tinted backgrounds\n- avoid: hero images, oversized headlines, marketing copy — show the product instead\n",
+      "entryPath": ".open-design/gb-fixit-handyman-services-homepage-gbfixit-co-u-2/tech-utility.html"
+    }
+  ]
+}
