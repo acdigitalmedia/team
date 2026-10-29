@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Handyman Dundee | GB Fixit Handyman Services</title>
+  <meta name="description" content="Local, friendly handyman in Dundee covering Dundee and surrounding areas. Kris and Gary at GB Fixit do everything from hanging doors to mowing lawns, and now plumbing. Free quotes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #F4F4F0;
+      --paper-2: #EAE8E3;
+      --ink: #0B1D30;
+      --ink-soft: #2A3644;
+      --hazard: #0E4D82;   /* brand navy takes the accent role */
+      --mark: #FFDE11;     /* Fixit yellow, used as a marker behind ink */
+      --rule: #0B1D30;
+      --display: 'Barlow Semi Condensed', 'Archivo Black', sans-serif;
+      --sans: 'Barlow', system-ui, sans-serif;
+      --mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      font-feature-settings: "tnum";
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { background: var(--ink); color: var(--paper); }
+    :focus-visible { outline: 3px solid var(--hazard); outline-offset: 2px; }
+    mark { background: var(--mark); color: var(--ink); padding: 0 .12em; }
+
+    .mono { font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.1em; font-size: 11px; }
+    .red { color: var(--hazard); }
+
+    /* ========= TOP REGISTER STRIP ========= */
+    .strip {
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      padding: 8px 22px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 22px;
+      font-family: var(--mono);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 11px;
+    }
+    .strip > div { display: flex; gap: 8px; align-items: baseline; white-space: nowrap; overflow: hidden; }
+    .strip span { color: var(--ink-soft); }
+
+    /* ========= NAV ========= */
+    .nav {
+      position: sticky; top: 0; z-index: 10; background: var(--paper);
+      padding: 12px 22px;
+      display: flex; align-items: center; justify-content: space-between; gap: 18px;
+      border-bottom: 4px solid var(--ink);
+    }
+    .brand { display: block; line-height: 0; }
+    .brand img { height: 48px; width: auto; display: block; }
+    .brand:hover { background: none; }
+    .nav ul { list-style: none; display: flex; gap: 10px; margin: 0; padding: 0; }
+    .nav ul a {
+      font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 8px 9px; border: 1px solid var(--ink); display: inline-block;
+    }
+    .callbtn {
+      font-family: var(--display); font-weight: 900; font-size: 22px; letter-spacing: .02em; text-transform: uppercase;
+      background: var(--mark); color: var(--ink); border: 2px solid var(--ink); padding: 8px 14px; white-space: nowrap;
+    }
+    .callbtn:hover { background: var(--ink); color: var(--mark); }
+
+    /* ========= HERO ========= */
+    .hero { display: grid; grid-template-columns: 1.4fr 1fr; border-bottom: 1px solid var(--ink); }
+    .hero .num {
+      font-family: var(--display); font-weight: 900;
+      font-size: clamp(220px, 34vw, 520px);
+      line-height: 0.8; letter-spacing: -0.04em;
+      padding: 18px 0 0 18px; position: relative;
+    }
+    .hero .num sup { font-size: 0.2em; letter-spacing: 0; vertical-align: top; position: relative; top: .35em; margin-left: .08em; }
+    .hero .num-cap { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; padding: 0 22px 22px; display: block; }
+    .hero .meta-col {
+      border-left: 1px solid var(--ink); padding: 22px;
+      display: flex; flex-direction: column; gap: 20px;
+    }
+    .ascii-frame { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; display: flex; align-items: center; gap: 10px; color: var(--ink); }
+    .ascii-frame::before { content: '['; color: var(--hazard); }
+    .ascii-frame::after { content: ']'; color: var(--hazard); }
+    .hero h1 {
+      font-family: var(--display); font-weight: 900; font-size: clamp(52px, 6vw, 92px);
+      line-height: 0.86; letter-spacing: -0.01em; text-transform: uppercase; margin: 0;
+    }
+    .hero .sub { font-family: var(--display); font-weight: 800; font-size: 22px; line-height: 1.1; text-transform: uppercase; margin: 0; }
+    .hero p.lead { font-size: 16px; line-height: 1.55; margin: 0; max-width: 46ch; }
+    .meta-row { display: grid; grid-template-columns: 9ch 1fr; gap: 12px; padding: 9px 0; border-top: 1px solid var(--ink); font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .meta-row b { color: var(--hazard); font-weight: 600; }
+    .meta-row a { text-decoration: underline; text-underline-offset: 3px; }
+    .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn { font-family: var(--display); font-weight: 900; font-size: 22px; letter-spacing: .02em; text-transform: uppercase; padding: 14px 20px; border: 2px solid var(--ink); display: inline-block; }
+    .btn-mark { background: var(--mark); }
+    .btn-mark:hover { background: var(--ink); color: var(--mark); }
+
+    /* ========= ABSTRACT / LEAD ========= */
+    .abstract {
+      padding: 56px 22px; display: grid; grid-template-columns: 10ch 1fr 30ch; gap: 32px;
+      border-bottom: 1px solid var(--ink);
+    }
+    .label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--hazard); padding-top: 6px; }
+    .abstract .body { font-size: 24px; line-height: 1.4; letter-spacing: -0.01em; max-width: 48ch; }
+    .abstract .body span.drop { font-family: var(--display); font-weight: 900; font-size: 84px; line-height: 0.8; float: left; margin: 6px 12px -4px 0; text-transform: uppercase; }
+    .abstract .credits { font-family: var(--mono); font-size: 11px; line-height: 1.8; text-transform: uppercase; letter-spacing: 0.1em; }
+    .abstract .credits hr { margin: 8px 0; border: 0; border-top: 1px solid var(--ink); }
+    .abstract .credits b { color: var(--hazard); font-weight: 600; }
+    .abstract .credits a { text-decoration: underline; text-underline-offset: 3px; }
+
+    /* ========= SERVICES (numbered list) ========= */
+    .manifest { padding: 56px 22px; border-bottom: 4px solid var(--ink); }
+    .manifest h2 {
+      font-family: var(--display); font-weight: 900; font-size: clamp(60px, 8.5vw, 132px);
+      line-height: 0.84; text-transform: uppercase; margin: 0 0 32px; max-width: 14ch;
+    }
+    .manifest h2 mark { display: inline-block; line-height: .92; padding: .04em .12em 0; margin-top: .08em; }
+    .thesis-list { display: grid; }
+    .thesis {
+      display: grid; grid-template-columns: 9ch 1fr 18ch; gap: 32px; padding: 22px 0;
+      border-top: 1px solid var(--ink); align-items: baseline; position: relative;
+    }
+    .thesis:last-child { border-bottom: 1px solid var(--ink); }
+    .thesis:hover { background: var(--ink); color: var(--paper); }
+    .thesis:hover .num { color: var(--mark); }
+    .thesis:hover p { color: #C9D4DF; }
+    .thesis .num { font-family: var(--display); font-weight: 900; font-size: 64px; line-height: 0.8; padding-left: 4px; }
+    .thesis .num small { font-family: var(--mono); font-weight: 400; font-size: 11px; letter-spacing: 0.16em; vertical-align: top; }
+    .thesis h3 { font-family: var(--display); font-weight: 900; font-size: clamp(28px, 3vw, 42px); line-height: 1; text-transform: uppercase; margin: 0 0 8px; }
+    .thesis p { margin: 0; font-size: 15px; line-height: 1.55; max-width: 60ch; color: var(--ink-soft); }
+    .thesis .tag { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; text-align: right; padding-right: 6px; }
+    .thesis a.cover { position: absolute; inset: 0; }
+    .thesis a.cover:hover { background: transparent; }
+
+    /* ========= INDEX (1px grid of real jobs) ========= */
+    .index-section { border-bottom: 1px solid var(--ink); }
+    .index-head { padding: 22px; display: flex; justify-content: space-between; align-items: baseline; gap: 24px; border-bottom: 1px solid var(--ink); flex-wrap: wrap; }
+    .index-head h2 { font-family: var(--display); font-weight: 900; font-size: clamp(30px, 3.4vw, 48px); text-transform: uppercase; line-height: 1; margin: 0; }
+    .index-head .meta { font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; }
+    .index-grid {
+      display: grid; grid-template-columns: 4ch 2.4fr 1fr 1fr 0.8fr; gap: 1px; background: var(--ink);
+      font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .index-grid > div { background: var(--paper); padding: 12px 14px; }
+    .index-grid .header { background: var(--ink); color: var(--paper); font-weight: 500; }
+    .index-grid .right { text-align: right; }
+    .index-grid .red { color: var(--hazard); font-weight: 600; }
+
+    /* ========= PHOTO BAND ========= */
+    .band { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--ink); border-bottom: 4px solid var(--ink); }
+    .band figure { margin: 0; background: var(--paper-2); }
+    .band .ph { height: 300px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); background: repeating-linear-gradient(135deg, transparent 0 14px, rgba(11,29,48,0.05) 14px 28px); }
+    .band figcaption { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; padding: 10px 14px; border-top: 1px solid var(--ink); background: var(--paper); }
+
+    /* ========= REVIEW (one loud quote) ========= */
+    .review { padding: 56px 22px; display: grid; grid-template-columns: 10ch 1fr 30ch; gap: 32px; border-bottom: 1px solid var(--ink); }
+    .review blockquote { margin: 0; font-family: var(--display); font-weight: 900; font-size: clamp(40px, 5vw, 76px); line-height: .92; text-transform: uppercase; }
+    .review cite { display: block; margin-top: 18px; font-family: var(--mono); font-style: normal; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
+    .review .side { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+    .review .side .score { font-family: var(--display); font-weight: 900; font-size: 64px; line-height: .9; letter-spacing: 0; display: block; }
+    .review .side hr { border: 0; border-top: 1px solid var(--ink); margin: 14px 0; }
+    .review .side p { margin: 0 0 12px; text-transform: none; letter-spacing: 0; font-family: var(--sans); font-size: 15px; }
+
+    /* ========= HOW WE WORK (specimen rows) ========= */
+    .specimen { border-bottom: 4px solid var(--ink); padding: 56px 22px; }
+    .specimen-head { display: flex; justify-content: space-between; align-items: baseline; gap: 22px; margin-bottom: 22px; padding-bottom: 14px; border-bottom: 1px solid var(--ink); flex-wrap: wrap; }
+    .specimen-head h2 { font-family: var(--display); font-weight: 900; font-size: 36px; text-transform: uppercase; margin: 0; line-height: 1; }
+    .specimen-head .meta { font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; }
+    .spec-row { display: grid; grid-template-columns: 12ch 1fr 34ch; align-items: baseline; gap: 22px; padding: 14px 0; border-bottom: 1px solid var(--ink); }
+    .spec-row .label { padding: 0; }
+    .spec-row .glyph { font-family: var(--display); font-weight: 900; line-height: 0.9; text-transform: uppercase; }
+    .spec-row .glyph.s1 { font-size: clamp(36px, 4.6vw, 64px); }
+    .spec-row .glyph.s2 { font-size: clamp(56px, 7vw, 104px); }
+    .spec-row .glyph.s3 { font-size: clamp(64px, 11.5vw, 180px); letter-spacing: -0.02em; }
+    .spec-row .stats { font-size: 15px; line-height: 1.5; }
+
+    /* ========= QUOTE BLOCK ========= */
+    .alert { border-bottom: 1px solid var(--ink); padding: 40px 22px; display: grid; grid-template-columns: 22ch 1fr; gap: 32px; background: repeating-linear-gradient(135deg, transparent 0 14px, rgba(255,222,17,0.28) 14px 28px); }
+    .alert .label-big { font-family: var(--display); font-weight: 900; font-size: 40px; line-height: .95; text-transform: uppercase; color: var(--ink); background: var(--mark); border: 3px solid var(--ink); padding: 14px 16px; align-self: start; }
+    .alert .label-big small { display: block; font-family: var(--mono); font-weight: 500; font-size: 11px; letter-spacing: .14em; margin-top: 10px; }
+    form.qf { background: var(--paper); border: 2px solid var(--ink); display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background-color: var(--ink); }
+    .qf label { background: var(--paper); display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--hazard); font-weight: 600; }
+    .qf .full { grid-column: 1 / -1; }
+    .qf input, .qf select, .qf textarea { font: inherit; font-family: var(--sans); font-size: 17px; font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--ink); border: 0; border-bottom: 2px solid var(--ink); background: transparent; padding: 8px 0; min-height: 44px; width: 100%; border-radius: 0; }
+    .qf textarea { resize: vertical; }
+    .qf button { grid-column: 1 / -1; font-family: var(--display); font-weight: 900; font-size: 26px; text-transform: uppercase; letter-spacing: .02em; border: 0; background: var(--mark); color: var(--ink); padding: 16px; cursor: pointer; min-height: 56px; }
+    .qf button:hover { background: var(--ink); color: var(--mark); }
+
+    /* ========= COLOPHON ========= */
+    .colophon { padding: 32px 22px 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.85; border-top: 1px solid var(--ink); background: var(--ink); color: var(--paper); }
+    .colophon dl { display: grid; grid-template-columns: 14ch 1fr; gap: 6px 16px; margin: 0; }
+    .colophon dt { color: var(--mark); }
+    .colophon dd { margin: 0; }
+    .colophon a { text-decoration: underline; text-underline-offset: 3px; }
+    .colophon a:hover { background: var(--mark); color: var(--ink); }
+    .colophon .credit { font-family: var(--display); font-weight: 900; font-size: clamp(56px, 9vw, 140px); line-height: .82; text-transform: uppercase; color: var(--paper); letter-spacing: 0; }
+    .colophon .credit small { display: block; font-family: var(--mono); font-weight: 400; font-size: 11px; letter-spacing: 0.18em; margin-top: 12px; color: #C9D4DF; }
+
+    .callbar { display: none; }
+
+    /* ========= RESPONSIVE ========= */
+    @media (max-width: 1080px) { .nav ul { display: none; } }
+    @media (max-width: 880px) {
+      .strip { grid-template-columns: 1fr 1fr; gap: 8px 22px; }
+      .strip > div:nth-child(n+5) { display: none; }
+      .hero { grid-template-columns: 1fr; }
+      .hero .num { font-size: 52vw; }
+      .hero .meta-col { border-left: none; border-top: 1px solid var(--ink); }
+      .abstract, .review { grid-template-columns: 1fr; gap: 18px; }
+      .thesis { grid-template-columns: 7ch 1fr; gap: 16px; }
+      .thesis .tag { display: none; }
+      .thesis .num { font-size: 48px; }
+      .index-grid { grid-template-columns: 4ch 1fr 1fr; font-size: 11px; }
+      .index-grid > div:nth-child(5n+4), .index-grid > div:nth-child(5n) { display: none; }
+      .band { grid-template-columns: 1fr 1fr; }
+      .band .ph { height: 200px; }
+      .spec-row { grid-template-columns: 1fr; gap: 6px; }
+      .alert { grid-template-columns: 1fr; }
+      .colophon { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .nav { padding: 10px 16px; }
+      .brand img { height: 40px; }
+      .callbtn { font-size: 18px; padding: 8px 10px; }
+      .strip, .abstract, .manifest, .review, .specimen, .alert, .colophon, .index-head { padding-left: 16px; padding-right: 16px; }
+      .abstract .body { font-size: 19px; }
+      .abstract .body span.drop { font-size: 64px; }
+      form.qf { grid-template-columns: 1fr; }
+      .ctas .btn { width: 100%; text-align: center; }
+      .callbar { display: grid; grid-template-columns: 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; border-top: 4px solid var(--ink); }
+      .callbar a { font-family: var(--display); font-weight: 900; font-size: 20px; text-transform: uppercase; text-align: center; padding: 14px 8px; }
+      .callbar a:first-child { background: var(--mark); color: var(--ink); }
+      .callbar a:last-child { background: var(--ink); color: var(--paper); }
+      body { padding-bottom: 60px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="strip">
+    <div><b>GB</b><span>FIXIT · HANDYMAN SERVICES</span></div>
+    <div><b>EST.</b><span>REVIEWED SINCE 2017</span></div>
+    <div><b>LAT.</b><span>56.4783° N</span></div>
+    <div><b>LON.</b><span>2.9453° W</span></div>
+    <div><b>STATUS</b><span class="red">⬤ DUNDEE TRUSTED TRADER</span></div>
+  </div>
+
+  <header class="nav" data-od-id="topnav">
+    <a class="brand" href="/" aria-label="GB Fixit Handyman Services, home"><img src="assets/gb-fixit-logo.png" alt="Handyman Dundee - GB Fixit Handyman Services" width="358" height="122"></a>
+    <ul>
+      <li><a href="#services">[ SERVICES ]</a></li>
+      <li><a href="#areas">[ AREAS ]</a></li>
+      <li><a href="/about">[ ABOUT ]</a></li>
+      <li><a href="/reviews">[ REVIEWS ]</a></li>
+      <li><a href="/contact">[ CONTACT ]</a></li>
+    </ul>
+    <a class="callbtn" href="tel:+447740443180">07740 443180</a>
+  </header>
+
+  <section class="hero" data-od-id="hero">
+    <div>
+      <div class="num" aria-label="Rated 9.8 out of 10">9.8<sup>/10</sup></div>
+      <span class="num-cap">↑ 59 customer reviews on Reference Line · 5.0 ★ from 35 on Google</span>
+    </div>
+    <div class="meta-col">
+      <span class="ascii-frame">All trades covered · Dundee &amp; surrounding areas</span>
+      <h1>Handyman in Dundee<span class="red">.</span></h1>
+      <p class="sub">Dundee handyman <mark>now offering plumbing</mark> services for 2026.</p>
+      <p class="lead">GB Fixit Handyman Services is your local, friendly handyman business covering Dundee and surrounding areas. Father and son Kris and Gary take on everything from hanging doors to mowing lawns: no job too big or small.</p>
+      <div class="ctas">
+        <a class="btn btn-mark" href="#quote">Get a free quote</a>
+        <a class="btn" href="tel:+447740443180">Call Kris</a>
+      </div>
+      <div>
+        <div class="meta-row"><b>WHO</b><span>Kris &amp; Gary Brown · father and son</span></div>
+        <div class="meta-row"><b>BASED</b><span>Pitkerro Road · Dundee DD4</span></div>
+        <div class="meta-row"><b>QUOTE</b><span>Free · written · every step set out</span></div>
+        <div class="meta-row"><b>PHONE</b><span><a href="tel:+447740443180">07740 443180</a></span></div>
+        <div class="meta-row"><b>EMAIL</b><span><a href="mailto:kris@gbfixit.co.uk">kris@gbfixit.co.uk</a></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="abstract" id="about" data-od-id="about">
+    <div class="label">[ ABOUT ]<br>///</div>
+    <div class="body">
+      <span class="drop">K</span>ris and Gary are the people who quote, turn up and do the work. We look at the job, talk through the options and give honest advice, even when it's the cheaper option. You get a written quote, we start and finish when we say, and we leave it tidy at the end of every day, not just the last one.
+    </div>
+    <div class="credits" id="areas">
+      <hr>
+      <b>AREAS COVERED</b><br>
+      Dundee<br>
+      <a href="/handyman-broughty-ferry">Broughty Ferry</a><br>
+      <a href="/handyman-monifieth">Monifieth</a><br>
+      <a href="/handyman-carnoustie">Carnoustie</a><br>
+      Arbroath · Invergowrie<br>
+      Birkhill · Tayport<br>
+      Newport &amp; Wormit
+      <hr>
+      <b>ALSO ARRANGED</b><br>
+      Electricians · Plasterers<br>
+      Project managed by Kris
+    </div>
+  </section>
+
+  <section class="manifest" id="services" data-od-id="services">
+    <h2>Handyman Dundee <mark>services</mark><span class="red">.</span></h2>
+    <div class="thesis-list">
+      <div class="thesis">
+        <div class="num">01<small>/07</small></div>
+        <div><h3>Painting &amp; decorating</h3><p>Rooms redecorated top to bottom, wallpaper hung and stripped, gloss, staining and varnishing, roughcast and exterior woodwork.</p></div>
+        <div class="tag">&gt;&gt;&gt; View</div>
+        <a class="cover" href="/painters-decorators-dundee" aria-label="Painting and decorating"></a>
+      </div>
+      <div class="thesis">
+        <div class="num">02<small>/07</small></div>
+        <div><h3>Joinery</h3><p>Doors hung, skirting and facings, cupboards and shelving, garages and outbuildings built and repaired.</p></div>
+        <div class="tag">&gt;&gt;&gt; View</div>
+        <a class="cover" href="/joiner-dundee" aria-label="Joinery"></a>
+      </div>
+      <div class="thesis">
+        <div class="num">03<small>/07</small></div>
+        <div><h3>Fencing &amp; gates</h3><p>New timber fences, storm damage put right, posts, panels and gates replaced.</p></div>
+        <div class="tag">&gt;&gt;&gt; View</div>
+        <a class="cover" href="/fencing-dundee" aria-label="Fencing and gates"></a>
+      </div>
+      <div class="thesis">
+        <div class="num">04<small>/07</small></div>
+        <div><h3>Gardens &amp; landscaping</h3><p>Mowing, hedges, tree pruning and removal, or a full makeover: patios, turf, planters and paths.</p></div>
+        <div class="tag">&gt;&gt;&gt; View</div>
+        <a class="cover" href="/gardener-dundee" aria-label="Gardens and landscaping"></a>
+      </div>
+      <div class="thesis">
+        <div class="num">05<small>/07</small></div>
+        <div><h3>Property maintenance</h3><p>General domestic repairs, gutters and fascias, stone and brick repointing, rubbish clearance.</p></div>
+        <div class="tag">&gt;&gt;&gt; View</div>
+        <a class="cover" href="/property-maintenance-dundee" aria-label="Property maintenance"></a>
+      </div>
+      <div class="thesis">
+        <div class="num">06<small>/07</small></div>
+        <div><h3>Plumbing <mark>New 2026</mark></h3><p>Dripping taps, blocked sinks, leaks and resealing, sorted in the same visit as your other jobs.</p></div>
+        <div class="tag">&gt;&gt;&gt; View</div>
+        <a class="cover" href="/plumber-dundee" aria-label="Plumbing"></a>
+      </div>
+      <div class="thesis">
+        <div class="num">07<small>/07</small></div>
+        <div><h3>Landlords &amp; letting agents</h3><p>Void turnarounds, check-out repairs and redecoration for local agents and landlords, with Kris as one point of contact.</p></div>
+        <div class="tag">&gt;&gt;&gt; View</div>
+        <a class="cover" href="/landlord-property-maintenance-dundee" aria-label="Landlords and letting agents"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="index-section" data-od-id="recent-jobs">
+    <div class="index-head">
+      <h2>Recent handyman work in Dundee <span class="red">///</span></h2>
+      <span class="meta">From the job log · 2025 — 2026</span>
+    </div>
+    <div class="index-grid">
+      <div class="header">№</div><div class="header">Job</div><div class="header">Trade</div><div class="header">Area</div><div class="header right">When</div>
+      <div>01</div><div>Fence and decking repaired</div><div class="red">Fencing</div><div>Dundee DD3</div><div class="right">Oct 2026</div>
+      <div>02</div><div>10 rotten boards replaced on a side gate, fence sanded and painted</div><div class="red">Fencing</div><div>Dundee DD2</div><div class="right">Sep 2026</div>
+      <div>03</div><div>Flat floor replaced, kitchen wall repaired, cornices and skirting fitted</div><div class="red">Maintenance</div><div>Dundee</div><div class="right">Jul 2026</div>
+      <div>04</div><div>Living room and master bedroom redecorated, mural wallpaper hung</div><div class="red">Decorating</div><div>Dundee</div><div class="right">Jun 2026</div>
+      <div>05</div><div>Garage renovated: new roof, timbers replaced, doors realigned</div><div class="red">Joinery</div><div>Dundee</div><div class="right">Jun 2026</div>
+      <div>06</div><div>Drive and patio power-washed, gravel relaid with slate, patio regrouted</div><div class="red">Gardens</div><div>Dundee</div><div class="right">Jun 2026</div>
+      <div>07</div><div>Rotting garage fascia replaced, motion-sensor light fitted</div><div class="red">Joinery</div><div>Dundee DD2</div><div class="right">Oct 2025</div>
+      <div>08</div><div>Roughcast exterior of a house repainted</div><div class="red">Decorating</div><div>DD6</div><div class="right">Sep 2025</div>
+    </div>
+  </section>
+
+  <section class="band" data-od-id="photos" aria-label="Recent work photos">
+    <figure><div class="ph" role="img" aria-label="Photo placeholder">[ Photo: fence + decking, DD3 ]</div><figcaption>01 · Fencing · Oct 2026</figcaption></figure>
+    <figure><div class="ph" role="img" aria-label="Photo placeholder">[ Photo: mural wallpaper wall ]</div><figcaption>04 · Decorating · Jun 2026</figcaption></figure>
+    <figure><div class="ph" role="img" aria-label="Photo placeholder">[ Photo: renovated garage ]</div><figcaption>05 · Joinery · Jun 2026</figcaption></figure>
+    <figure><div class="ph" role="img" aria-label="Photo placeholder">[ Photo: roughcast before / after ]</div><figcaption>08 · Decorating · Sep 2025</figcaption></figure>
+  </section>
+
+  <section class="review" data-od-id="reviews">
+    <div class="label">[ REVIEWS ]<br>///</div>
+    <div>
+      <blockquote>“The most positive, proactive, happy tradies I've ever experienced.”</blockquote>
+      <cite>— Cara-Anne M. · Google · Jun 2026</cite>
+    </div>
+    <div class="side">
+      <span class="score">9.8/10</span>59 reviews · Reference Line
+      <hr>
+      <span class="score">5.0 ★</span>35 reviews · Google
+      <hr>
+      <p>“Everything was done to a high standard and they started and finished when they said.” — Pam, Dec 2025</p>
+      <p>“Very friendly and faultless work, small details matter to these guys!” — Elaine, Invergowrie</p>
+      <a href="/reviews" style="text-decoration:underline;text-underline-offset:3px">&gt;&gt;&gt; Read our happy customers</a>
+    </div>
+  </section>
+
+  <section class="specimen" data-od-id="how-we-work">
+    <div class="specimen-head">
+      <h2>How we work ///</h2>
+      <span class="meta">No surprises · start to finish</span>
+    </div>
+    <div class="spec-row">
+      <span class="label">Step 01</span>
+      <div class="glyph s1">We visit and listen.</div>
+      <div class="stats">We look at the job, talk through the options and give honest advice.</div>
+    </div>
+    <div class="spec-row">
+      <span class="label">Step 02</span>
+      <div class="glyph s2">Written quote.</div>
+      <div class="stats">Each step, the materials and the labour set out. We start and finish when we say.</div>
+    </div>
+    <div class="spec-row">
+      <span class="label">Step 03</span>
+      <div class="glyph s3"><a href="tel:+447740443180">07740 443180</a></div>
+      <div class="stats">Call Kris. He's your point of contact from first call to final invoice.</div>
+    </div>
+  </section>
+
+  <section class="alert" id="quote" data-od-id="quote">
+    <div class="label-big">Free quote<small>Reply to arrange a visit</small></div>
+    <form class="qf" action="#" onsubmit="return false">
+      <label>Name<input type="text" name="name" autocomplete="name"></label>
+      <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
+      <label>Email<input type="email" name="email" autocomplete="email"></label>
+      <label>Town or postcode<input type="text" name="town" autocomplete="postal-code"></label>
+      <label class="full">Type of job
+        <select name="type">
+          <option value="">Choose one</option>
+          <option>Painting &amp; decorating</option><option>Joinery</option><option>Fencing</option><option>Gardens</option>
+          <option>Property maintenance</option><option>Plumbing</option><option>Landlord / letting agent</option><option>Other</option>
+        </select></label>
+      <label class="full">Tell us about the job<textarea name="job" rows="3"></textarea></label>
+      <label class="full">Photos (optional)<input type="file" name="photos" multiple accept="image/*"></label>
+      <button type="submit">Send for a free quote &gt;&gt;&gt;</button>
+    </form>
+  </section>
+
+  <footer class="colophon" data-od-id="colophon">
+    <dl>
+      <dt>Phone</dt><dd><a href="tel:+447740443180">07740 443180</a> · Kris</dd>
+      <dt>Email</dt><dd><a href="mailto:kris@gbfixit.co.uk">kris@gbfixit.co.uk</a></dd>
+      <dt>Based</dt><dd>32 Pitkerro Road · Dundee DD4 7EG</dd>
+      <dt>Services</dt><dd><a href="/painters-decorators-dundee">Decorating</a> · <a href="/joiner-dundee">Joinery</a> · <a href="/fencing-dundee">Fencing</a> · <a href="/gardener-dundee">Gardens</a> · <a href="/property-maintenance-dundee">Maintenance</a> · <a href="/plumber-dundee">Plumbing</a> · <a href="/landlord-property-maintenance-dundee">Landlords</a></dd>
+      <dt>Areas</dt><dd>Dundee · <a href="/handyman-broughty-ferry">Broughty Ferry</a> · <a href="/handyman-monifieth">Monifieth</a> · <a href="/handyman-carnoustie">Carnoustie</a> · Arbroath · Invergowrie · Birkhill · Tayport · Newport · Wormit</dd>
+      <dt>More</dt><dd><a href="/about">About</a> · <a href="/reviews">Reviews</a> · <a href="/contact">Contact</a> · <a href="https://www.facebook.com/gbfixit">Facebook</a></dd>
+    </dl>
+    <div>
+      <div class="credit">GB&nbsp;Fixit<small>Handyman in Dundee · Dundee Trusted Trader · © 2026 GB Fixit Handyman Services</small></div>
+    </div>
+  </footer>
+
+  <div class="callbar"><a href="tel:+447740443180">Call Kris</a><a href="#quote">Free quote</a></div>
+</body>
+</html>
