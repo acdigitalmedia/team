@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "GB Fixit Homepage: Blueprint",
+  "entry": ".open-design/gb-fixit-handyman-services-homepage-gbfixit-co-u/merged.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "standalone",
+    "site",
+    "png",
+    "jpeg",
+    "pdf"
+  ],
+  "supportingFiles": [
+    "assets/gb-fixit-logo.png"
+  ],
+  "createdAt": "2026-10-29T19:55:19.084Z",
+  "updatedAt": "2026-10-29T19:56:13.414Z",
+  "sourceSkillId": "od:prototype:web-prototype",
+  "designSystemId": "user:gb-fixit",
+  "explorationId": "gb-fixit-handyman-services-homepage-gbfixit-co-u",
+  "metadata": {
+    "exports": [
+      {
+        "path": ".open-design/gb-fixit-handyman-services-homepage-gbfixit-co-u/exports/merged.html",
+        "format": "standalone",
+        "bytes": 87160,
+        "exportedAt": "2026-10-29T19:56:00.870Z"
+      }
+    ],
+    "shares": [
+      {
+        "provider": "claude-artifact",
+        "url": "https://claude.ai/artifact/7w24tFzonc3bmty5REPVBg",
+        "publishedAt": "2026-10-29T19:56:13.412Z",
+        "siteRef": "https://claude.ai/artifact/7w24tFzonc3bmty5REPVBg"
+      }
+    ]
+  }
+}

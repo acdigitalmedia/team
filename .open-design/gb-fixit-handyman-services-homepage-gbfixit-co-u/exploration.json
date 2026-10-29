@@ -34,5 +34,11 @@
       "spec": "### Toolbox blueprint  `(id: toolbox-blueprint)`\n\nPrecise and engineered. Navy blueprint background with a faint technical grid, measurement-line details and small uppercase spec labels (e.g. JOB 01, EST. 2017 REVIEWS); thin white lines plus bold yellow accents. Hero headline set big and left-aligned with a framed photo marked up like a plan. Services as a spec-sheet table/grid with tool icons and part-number style labels.\n",
       "entryPath": ".open-design/gb-fixit-handyman-services-homepage-gbfixit-co-u/toolbox-blueprint.html"
     }
-  ]
+  ],
+  "chosen": {
+    "directionId": "toolbox-blueprint",
+    "next": "merge",
+    "notes": "C but with A's grid/boxes",
+    "chosenAt": "2026-10-29T19:53:10.193Z"
+  }
 }
