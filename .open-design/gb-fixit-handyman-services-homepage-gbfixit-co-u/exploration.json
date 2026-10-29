@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "explorationId": "gb-fixit-handyman-services-homepage-gbfixit-co-u",
+  "title": "GB Fixit Handyman Services homepage (gbfixit.co.uk)…",
+  "brief": "GB Fixit Handyman Services homepage (gbfixit.co.uk), redesigned to feel more masculine: tougher, heavier, more like a working tradesman's brand, while keeping the brand colours (navy #0E4D82, yellow #FFDE11, deep navy #0E2436, blue #2B6CA3), the logo and bold uppercase Barlow Semi Condensed headings with Barlow body. Same content and SEO as the current new homepage: H1 \"Handyman in Dundee\", subline \"Dundee handyman now offering plumbing services for 2026. All trades covered.\", intro \"GB Fixit Handyman Services is your local, friendly handyman business covering Dundee and surrounding areas. Father and son Kris and Gary take on everything from hanging doors to mowing lawns\", CTAs Get a free quote / Call Kris 07740 443180, trust strip 9.8/10 from 59 Reference Line reviews, 5.0 from 35 Google reviews, Dundee Trusted Trader; key section \"Handyman Dundee services\": Painting & decorating, Joinery, Fencing & gates, Gardens & landscaping, Property maintenance, Plumbing (new for 2026), each linking to its page. Nav: Services, Areas, About, Reviews, Contact. Photos are labelled placeholders.",
+  "skillId": "web-prototype",
+  "skillMode": "prototype",
+  "axis": "custom",
+  "designSystemId": "user:gb-fixit",
+  "designSystemName": "Design System Inspired by GB Fixit",
+  "createdAt": "2026-10-29T19:42:21.117Z",
+  "directions": [
+    {
+      "id": "workshop-dark",
+      "label": "Workshop dark",
+      "axis": "custom",
+      "summary": "Dark and heavy. Deep navy/near-black (#0B1D30, #0E2436) dominates the page; a full-bleed darkened hero photo with an oversized, extra-bol…",
+      "spec": "### Workshop dark  `(id: workshop-dark)`\n\nDark and heavy. Deep navy/near-black (#0B1D30, #0E2436) dominates the page; a full-bleed darkened hero photo with an oversized, extra-bold condensed headline over it; yellow used sparingly as hard highlights (an underline bar, the CTA). Square corners (0-2px), thick rules, no soft shadows, a subtle grit texture. Services as a dark tiled list with big numbers.\n",
+      "entryPath": ".open-design/gb-fixit-handyman-services-homepage-gbfixit-co-u/workshop-dark.html"
+    },
+    {
+      "id": "hi-vis-site-board",
+      "label": "Hi-vis site board",
+      "axis": "custom",
+      "summary": "Construction-site energy on a light base. White and steel-grey with solid navy blocks, yellow-and-navy hazard-stripe bars as dividers, an…",
+      "spec": "### Hi-vis site board  `(id: hi-vis-site-board)`\n\nConstruction-site energy on a light base. White and steel-grey with solid navy blocks, yellow-and-navy hazard-stripe bars as dividers, angled/diagonal section edges, stencil-style big numbering, chunky 3-4px borders. Hero is split with a heavy navy slab carrying the headline and a hard-edged photo. Services as bold bordered boxes like site signage.\n",
+      "entryPath": ".open-design/gb-fixit-handyman-services-homepage-gbfixit-co-u/hi-vis-site-board.html"
+    },
+    {
+      "id": "toolbox-blueprint",
+      "label": "Toolbox blueprint",
+      "axis": "custom",
+      "summary": "Precise and engineered. Navy blueprint background with a faint technical grid, measurement-line details and small uppercase spec labels (…",
+      "spec": "### Toolbox blueprint  `(id: toolbox-blueprint)`\n\nPrecise and engineered. Navy blueprint background with a faint technical grid, measurement-line details and small uppercase spec labels (e.g. JOB 01, EST. 2017 REVIEWS); thin white lines plus bold yellow accents. Hero headline set big and left-aligned with a framed photo marked up like a plan. Services as a spec-sheet table/grid with tool icons and part-number style labels.\n",
+      "entryPath": ".open-design/gb-fixit-handyman-services-homepage-gbfixit-co-u/toolbox-blueprint.html"
+    }
+  ]
+}
