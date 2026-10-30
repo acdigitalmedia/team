@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "Homepage A · Photo-led",
+  "entry": ".open-design/three-variations-of-the-approved-gb-fixit-homepa/a-photo-led.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "standalone",
+    "site",
+    "png",
+    "jpeg",
+    "pdf"
+  ],
+  "supportingFiles": [
+    "assets/gb-fixit-logo.png"
+  ],
+  "createdAt": "2026-10-29T21:04:49.574Z",
+  "updatedAt": "2026-10-29T21:04:49.574Z",
+  "sourceSkillId": "od:prototype:saas-landing",
+  "designSystemId": "user:gb-fixit",
+  "explorationId": "three-variations-of-the-approved-gb-fixit-homepa",
+  "directionId": "a-photo-led"
+}

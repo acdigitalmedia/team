@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Handyman Dundee | GB Fixit Handyman Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0E4D82;--deep:#0E2436;--black:#0B1D30;--yellow:#FFDE11;--steel:#E4E8EC;--steel-2:#C7CED6;--ink:#1F2933;--slate:#4A5562;--display:"Barlow Semi Condensed",system-ui,sans-serif;--body:"Barlow",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+:focus-visible{outline:3px solid var(--navy);outline-offset:2px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;margin:0}
+.hazard{height:18px;background:repeating-linear-gradient(-45deg,var(--yellow) 0 22px,var(--black) 22px 44px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:12px 26px;border:4px solid var(--black);border-radius:0;font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none}
+.btn-y{background:var(--yellow);color:var(--black);box-shadow:6px 6px 0 var(--black)}
+.btn-y:hover{transform:translate(2px,2px);box-shadow:4px 4px 0 var(--black)}
+.btn-w{background:#fff;color:var(--black)}
+.btn-w:hover{background:var(--black);color:#fff}
+header{background:#fff;border-bottom:4px solid var(--black)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:90px}
+header img{height:56px;display:block}
+nav{display:flex;gap:4px}
+nav a{font-family:var(--display);font-weight:800;font-size:18px;letter-spacing:1px;text-transform:uppercase;color:var(--black);text-decoration:none;padding:10px 14px;border:3px solid transparent}
+nav a:hover{border-color:var(--black)}
+header .btn{box-shadow:none;min-height:50px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;min-height:620px;background:var(--steel)}
+.slab{background:var(--navy);color:#fff;padding:64px 64px 64px max(28px,calc((100vw - 1240px)/2 + 28px));clip-path:polygon(0 0,100% 0,88% 100%,0 100%);display:flex;flex-direction:column;justify-content:center}
+.tag{align-self:flex-start;background:var(--yellow);color:var(--black);font-family:var(--display);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:16px;padding:6px 12px;border:3px solid var(--black)}
+.slab h1{font-size:118px;line-height:.86;font-weight:900;color:#fff;margin:22px 0 18px}
+.slab h1 em{font-style:normal;color:var(--yellow)}
+.slab .line{font-size:22px;font-weight:600;max-width:560px}
+.slab p.intro{color:#D6E2EE;max-width:540px;margin:14px 0 0}
+.slab .ctas{display:flex;flex-wrap:wrap;gap:16px;margin-top:30px}
+.photo{position:relative;margin:48px 28px 48px -40px;border:6px solid var(--black);background:var(--steel-2);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;color:var(--slate);padding:20px}
+.stamp{position:absolute;left:-30px;bottom:30px;background:#fff;border:4px solid var(--black);padding:14px 18px;transform:rotate(-3deg)}
+.stamp b{display:block;font-family:var(--display);font-weight:900;font-size:40px;line-height:1;color:var(--navy)}
+.stamp span{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.trustbar{background:var(--black);color:#fff}
+.trustbar .wrap{display:flex;flex-wrap:wrap;gap:12px 48px;align-items:center;min-height:72px;font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:1px;text-transform:uppercase}
+.trustbar b{color:var(--yellow);font-weight:900;font-size:26px;margin-right:8px}
+.svc{padding:88px 0 96px;background:#fff}
+.svc h2{font-size:76px;line-height:.9;font-weight:900;color:var(--black)}
+.svc h2 span{background:var(--yellow);padding:0 10px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.svc .lead{max-width:640px;margin:18px 0 44px;color:var(--slate);font-size:18px}
+.signs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.sign{border:4px solid var(--black);text-decoration:none;color:var(--black);display:flex;flex-direction:column;background:#fff;transition:transform .12s,box-shadow .12s}
+.sign:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--navy)}
+.sign .top{display:flex;align-items:center;justify-content:space-between;background:var(--navy);color:#fff;padding:12px 18px}
+.sign .no{font-family:var(--display);font-weight:900;font-size:44px;line-height:1;color:var(--yellow)}
+.sign .ic{width:44px;height:44px;border:3px solid #fff;display:flex;align-items:center;justify-content:center}
+.sign .bd{padding:20px 18px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.sign h3{font-size:30px;line-height:1;font-weight:900}
+.sign p{margin:0;color:var(--slate);font-size:16px}
+.sign .go{margin-top:auto;padding-top:10px;font-family:var(--display);font-weight:800;letter-spacing:1.5px;text-transform:uppercase;font-size:17px;border-top:3px solid var(--black)}
+.sign.new .top{background:var(--yellow);color:var(--black)}
+.sign.new .no{color:var(--black)}
+.sign.new .ic{border-color:var(--black)}
+@media (max-width:1000px){nav{display:none}.hero{grid-template-columns:1fr}.slab{clip-path:none;padding:48px 28px}.slab h1{font-size:84px}.photo{margin:28px;min-height:280px}.stamp{left:16px}.signs{grid-template-columns:1fr 1fr}.svc h2{font-size:54px}}
+@media (max-width:640px){.wrap{padding:0 16px}.slab{padding:40px 16px}header .btn{display:none}header img{height:44px}.slab h1{font-size:60px}.signs{grid-template-columns:1fr}.slab .ctas .btn{width:100%}.photo{margin:16px}}
+</style>
+</head>
+<body>
+<div class="hazard" aria-hidden="true"></div>
+<header><div class="wrap">
+  <a href="/"><img src="assets/gb-fixit-logo.png" alt="Handyman Dundee - GB Fixit Handyman Services" width="358" height="122"></a>
+  <nav aria-label="Main"><a href="/#services">Services</a><a href="/#areas">Areas</a><a href="/about">About</a><a href="/reviews">Reviews</a><a href="/contact">Contact</a></nav>
+  <a class="btn btn-y" href="tel:+447740443180">Call 07740 443180</a>
+</div></header>
+
+<main>
+<section class="hero" data-od-id="hero">
+  <div class="slab">
+    <span class="tag">All trades covered</span>
+    <h1>Handyman <em>in Dundee</em></h1>
+    <p class="line">Dundee handyman now offering plumbing services for 2026.</p>
+    <p class="intro">GB Fixit Handyman Services is your local, friendly handyman business covering Dundee and surrounding areas. Father and son Kris and Gary take on everything from hanging doors to mowing lawns.</p>
+    <div class="ctas">
+      <a class="btn btn-y" href="#quote">Get a free quote</a>
+      <a class="btn btn-w" href="tel:+447740443180">Call Kris 07740 443180</a>
+    </div>
+  </div>
+  <div class="photo" role="img" aria-label="Photo placeholder">[PHOTO: Kris and Gary with the van, on a job]
+    <div class="stamp"><b>9.8/10</b><span>59 Reference Line reviews</span></div>
+  </div>
+</section>
+
+<div class="trustbar" data-od-id="trust"><div class="wrap">
+  <span><b>9.8/10</b>Reference Line</span><span><b>5.0 ★</b>35 Google reviews</span><span><b>✓</b>Dundee Trusted Trader</span>
+</div></div>
+<div class="hazard" aria-hidden="true"></div>
+
+<section class="svc" id="services" data-od-id="services">
+  <div class="wrap">
+    <h2><span>Handyman Dundee</span> services</h2>
+    <p class="lead">From odd jobs around the house to bigger projects. Pick a trade to see typical jobs, recent work and photos.</p>
+    <div class="signs">
+      <a class="sign" href="/painters-decorators-dundee"><div class="top"><span class="no">01</span><span class="ic"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><rect x="3" y="3" width="14" height="6"/><path d="M17 6h3v5h-9v3"/><rect x="9" y="14" width="4" height="7"/></svg></span></div><div class="bd"><h3>Painting &amp; decorating</h3><p>Inside and out, left tidy at the end of every day.</p><span class="go">View service →</span></div></a>
+      <a class="sign" href="/joiner-dundee"><div class="top"><span class="no">02</span><span class="ic"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="m14 4 6 6-3 3-6-6z"/><path d="M11 7 3 15v6h6l8-8"/></svg></span></div><div class="bd"><h3>Joinery</h3><p>Doors, skirting, cupboards, garages and outbuildings.</p><span class="go">View service →</span></div></a>
+      <a class="sign" href="/fencing-dundee"><div class="top"><span class="no">03</span><span class="ic"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M5 21V6l2-3 2 3v15M15 21V6l2-3 2 3v15M3 10h18M3 16h18"/></svg></span></div><div class="bd"><h3>Fencing &amp; gates</h3><p>New fences built, storm damage put right.</p><span class="go">View service →</span></div></a>
+      <a class="sign" href="/gardener-dundee"><div class="top"><span class="no">04</span><span class="ic"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M12 21V11M12 11c0-4 3-7 7-7 0 4-3 7-7 7zM12 14c0-3-2-5-6-5 0 3 2 5 6 5z"/></svg></span></div><div class="bd"><h3>Gardens &amp; landscaping</h3><p>Mowing, hedges and trees, or a full makeover.</p><span class="go">View service →</span></div></a>
+      <a class="sign" href="/property-maintenance-dundee"><div class="top"><span class="no">05</span><span class="ic"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M3 11 12 4l9 7M5 10v10h14V10"/></svg></span></div><div class="bd"><h3>Property maintenance</h3><p>Repairs, gutters, repointing and rubbish clearance.</p><span class="go">View service →</span></div></a>
+      <a class="sign new" href="/plumber-dundee"><div class="top"><span class="no">06</span><span class="ic"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 8h8v4h6v4M12 8V4M18 16v2a2 2 0 0 1-4 0"/></svg></span></div><div class="bd"><h3>Plumbing · New 2026</h3><p>Taps, blocked sinks, leaks and resealing.</p><span class="go">View service →</span></div></a>
+    </div>
+  </div>
+</section>
+</main>
+</body>
+</html>

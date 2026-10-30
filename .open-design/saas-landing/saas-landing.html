@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Handyman Dundee | GB Fixit Handyman Services</title>
+  <meta name="description" content="Local, friendly handyman in Dundee covering Dundee and surrounding areas. Kris and Gary at GB Fixit do everything from hanging doors to mowing lawns, and now plumbing. Free quotes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F6F8FA; --fg: #0E2436; --muted: #4A5562; --border: #DCE5EE;
+      --accent: #0E4D82; --surface: #ffffff; --yellow: #FFDE11;
+      --display: 'Barlow Semi Condensed', 'Barlow', system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 'Barlow', system-ui, sans-serif; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; }
+    .logo { display: block; line-height: 0; }
+    .logo img { height: 50px; width: auto; }
+    nav { display: flex; align-items: center; }
+    nav a { color: var(--fg); text-decoration: none; margin-left: 22px; font-size: 15px; font-weight: 600; }
+    nav a:hover { color: var(--accent); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; font: inherit; cursor: pointer; padding: 12px 22px; border-radius: 6px; font-weight: 700; text-decoration: none; min-height: 48px; text-transform: uppercase; letter-spacing: .06em; font-size: 15px; }
+    .btn-primary { background: var(--yellow); color: var(--fg); border: 2px solid var(--yellow); }
+    .btn-primary:hover { background: #F5D20A; border-color: #F5D20A; }
+    .btn-secondary { background: transparent; color: var(--fg); border: 2px solid var(--fg); }
+    .btn-secondary:hover { background: var(--fg); color: #fff; }
+    .btn-link { background: transparent; border: none; color: var(--accent); padding: 12px 0; font-weight: 700; text-decoration: none; }
+    .btn-link:hover { text-decoration: underline; }
+    section { padding: 80px 0; }
+    .hero { padding: 88px 0 100px; }
+    section.wrap { padding: 80px 32px; }
+    section.areas.wrap { padding: 0 32px 72px; }
+    .eyebrow { font-family: ui-monospace, monospace; color: var(--accent); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 18px; display: block; }
+    .hero h1 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(56px, 7vw, 96px); line-height: .92; letter-spacing: 0; max-width: 12ch; margin: 0 0 24px; }
+    .hero h1 span { color: var(--accent); }
+    .hero .sub { font-size: 21px; font-weight: 600; color: var(--fg); margin: 0 0 10px; }
+    .hero p { font-size: 19px; color: var(--muted); max-width: 58ch; margin: 0 0 36px; }
+    .hero .cta { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+    .features { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .feature h3 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 24px; line-height: 1.05; margin: 0 0 10px; }
+    .feature .num { font-family: ui-monospace, monospace; color: var(--accent); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 12px; display: block; }
+    .feature p { margin: 0; color: var(--muted); font-size: 15.5px; }
+    .proof { text-align: center; }
+    .proof h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin: 0 0 28px; font-weight: 600; }
+    .logos { display: flex; justify-content: center; gap: 56px; flex-wrap: wrap; }
+    .logos div { text-align: center; }
+    .logos b { display: block; font-family: var(--display); font-weight: 800; font-size: 40px; line-height: 1; color: var(--fg); }
+    .logos span { font-size: 14px; color: var(--muted); font-weight: 600; }
+    .quote { max-width: 760px; margin: 44px auto 0; font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: 28px; line-height: 1.15; }
+    .quote cite { display: block; font-family: 'Barlow', sans-serif; text-transform: none; font-style: normal; font-weight: 500; font-size: 15px; color: var(--muted); margin-top: 10px; }
+    .pricing h2 { text-align: center; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 48px; line-height: 1; margin: 0 0 12px; }
+    .pricing .lede { text-align: center; color: var(--muted); margin: 0 0 48px; }
+    .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .tier { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 32px; display: flex; flex-direction: column; }
+    .tier.featured { border: 2px solid var(--accent); position: relative; }
+    .tier.featured::before { content: 'For agents & landlords'; position: absolute; top: -13px; left: 24px; background: var(--accent); color: white; padding: 3px 12px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+    .tier h3 { margin: 0 0 6px; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 30px; line-height: 1; }
+    .tier .for { color: var(--muted); margin: 0; font-size: 15px; }
+    .tier ul { list-style: none; padding: 0; margin: 18px 0 24px; font-size: 15.5px; flex: 1; }
+    .tier ul li { border-top: 1px solid var(--border); }
+    .tier ul li:first-child { border-top: none; }
+    .tier ul a { display: flex; justify-content: space-between; padding: 9px 0; text-decoration: none; font-weight: 600; }
+    .tier ul a:hover { color: var(--accent); }
+    .tier ul a::after { content: '→'; color: var(--accent); }
+    .tier ul .new { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; background: var(--yellow); padding: 1px 6px; border-radius: 4px; margin-left: 8px; }
+    .tier .btn { width: 100%; }
+    .areas { text-align: center; padding-top: 0; }
+    .areas p { color: var(--muted); margin: 0 auto; max-width: 70ch; }
+    .areas p a { color: var(--accent); font-weight: 700; }
+    .closing { background: var(--accent); color: white; text-align: center; }
+    .closing h2 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 56px; line-height: 1; margin: 0 0 14px; }
+    .closing p { opacity: 0.9; margin: 0 0 28px; font-size: 18px; }
+    .closing .cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .closing .btn-secondary { color: #fff; border-color: #fff; }
+    .closing .btn-secondary:hover { background: #fff; color: var(--accent); }
+    footer { padding: 28px 0; color: var(--muted); font-size: 14px; text-align: center; }
+    footer a { text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+
+    /* ---- GB Fixit blue ---- */
+    .hero-band { background: var(--accent); color: #fff; background-image: radial-gradient(120% 90% at 85% 10%, #1A5E96 0%, var(--accent) 55%, #0B3F6B 100%); }
+    .hero-band header { border-bottom: 1px solid rgba(255,255,255,.16); }
+    .hero-band nav a { color: #fff; }
+    .hero-band nav a:hover { color: var(--yellow); }
+    .hero-band .btn-secondary { color: #fff; border-color: #fff; }
+    .hero-band .btn-secondary:hover { background: #fff; color: var(--accent); }
+    .hero-band .eyebrow { color: #BFD3E6; }
+    .hero-band .hero h1 { color: #fff; }
+    .hero-band .hero h1 span { color: var(--yellow); }
+    .hero-band .hero .sub { color: #fff; }
+    .hero-band .hero p { color: #D6E2EE; }
+    .hero-band .btn-link { color: #fff; }
+    .features { background: #EEF4FA; border-color: #DCE5EE; }
+    .feature h3 { color: var(--accent); }
+    .feature .num { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; }
+    section.proof.wrap { max-width: none; background: #2B6CA3; color: #fff; }
+    .proof h2 { color: #D6E2EE; }
+    .logos b { color: #fff; }
+    .logos span { color: #D6E2EE; }
+    .quote { color: #fff; }
+    .quote cite { color: #D6E2EE; }
+    .pricing h2 { color: var(--accent); }
+    .tier { border-top: 6px solid var(--accent); }
+    .tier h3 { color: var(--accent); }
+    .tier.featured { background: var(--accent); color: #fff; border: 0; border-top: 6px solid var(--yellow); }
+    .tier.featured::before { background: var(--yellow); color: var(--fg); }
+    .tier.featured h3 { color: #fff; }
+    .tier.featured .for { color: #D6E2EE; }
+    .tier.featured ul li { border-color: rgba(255,255,255,.2); }
+    .tier.featured ul a:hover { color: var(--yellow); }
+    .tier.featured ul a::after { color: var(--yellow); }
+    .closing { background: #0E2436; }
+    footer.wrap { max-width: none; background: #0B1D30; color: #A9BED2; }
+    footer a:hover { color: var(--yellow); }
+    /* ---- video ---- */
+    .video { background: #fff; padding: 88px 0; }
+    .video-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: center; }
+    .video h2 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 48px; line-height: 1; margin: 0 0 16px; color: var(--accent); }
+    .video p { color: var(--muted); font-size: 18px; margin: 0 0 14px; }
+    .video ul { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+    .video li { background: #EEF4FA; color: var(--accent); font-weight: 600; font-size: 14px; padding: 6px 12px; border-radius: 999px; }
+    .player { position: relative; aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden; background: var(--accent); background-image: radial-gradient(120% 90% at 80% 10%, #1A5E96 0%, var(--accent) 55%, #0B3F6B 100%); box-shadow: 0 0 0 6px #EEF4FA, 0 24px 48px rgba(14,36,54,.25); display: flex; align-items: center; justify-content: center; color: #fff; text-decoration: none; }
+    .player .play { width: 96px; height: 96px; border-radius: 50%; background: var(--yellow); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.3); transition: transform .15s; }
+    .player:hover .play { transform: scale(1.06); }
+    .player .lbl { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 18px; display: flex; justify-content: space-between; gap: 12px; font-size: 14px; background: linear-gradient(transparent, rgba(11,29,48,.7)); }
+    .player .lbl b { font-weight: 700; }
+    .player .lbl small { font-family: ui-monospace, monospace; color: #BFD3E6; }
+    .player .note { position: absolute; top: 14px; left: 18px; font-family: ui-monospace, monospace; font-size: 12px; color: #BFD3E6; }
+    @media (max-width: 900px) { .video-grid { grid-template-columns: 1fr; gap: 28px; } .player .play { width: 72px; height: 72px; } }
+    @media (max-width: 560px) { .player .lbl small { display: none; } .video { padding: 56px 0; } .video h2 { font-size: 38px; } }
+    /* ---- photo slots ---- */
+    .photo { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; padding: 20px; background: #DFE9F3; color: #0E4D82; border: 2px dashed #9DB6CE; border-radius: 10px; }
+    .photo b { font-size: 15px; font-weight: 700; }
+    .photo small { font-size: 12px; color: #4A5562; font-family: ui-monospace, monospace; }
+    .hero-band .photo { background: rgba(255,255,255,.08); color: #fff; border-color: rgba(255,255,255,.35); }
+    .hero-band .photo small { color: #BFD3E6; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+    .hero-photo { position: relative; }
+    .hero-photo .photo { height: 460px; border-radius: 14px; }
+    .hero-photo .badge { position: absolute; left: -22px; bottom: 28px; background: #fff; color: var(--fg); border-radius: 10px; padding: 12px 16px; box-shadow: 0 12px 30px rgba(0,0,0,.25); display: flex; gap: 12px; align-items: center; }
+    .hero-photo .badge b { font-family: var(--display); font-weight: 800; font-size: 30px; line-height: 1; color: var(--accent); }
+    .hero-photo .badge span { font-size: 13px; color: var(--muted); line-height: 1.3; }
+    .tier .photo { height: 170px; margin: -32px -32px 24px; border-radius: 0; border-width: 0 0 2px; }
+    .tier.featured .photo { background: rgba(255,255,255,.08); color: #fff; border-color: rgba(255,255,255,.3); }
+    .tier.featured .photo small { color: #BFD3E6; }
+    .work h2 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 48px; line-height: 1; margin: 0 0 12px; color: var(--accent); }
+    .work .lede { color: var(--muted); margin: 0 0 36px; max-width: 60ch; }
+    .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 240px; gap: 16px; }
+    .work-grid figure { margin: 0; display: flex; flex-direction: column; }
+    .work-grid figure.big { grid-column: span 2; grid-row: span 2; }
+    .work-grid .photo { flex: 1; border-radius: 10px 10px 0 0; }
+    .work-grid figcaption { background: var(--accent); color: #fff; padding: 10px 14px; border-radius: 0 0 10px 10px; font-size: 14px; display: flex; justify-content: space-between; gap: 10px; }
+    .work-grid figcaption span { color: #BFD3E6; white-space: nowrap; }
+    .meet { background: #EEF4FA; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .meet-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: center; }
+    .meet .photo { height: 420px; }
+    .meet h2 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 48px; line-height: 1; margin: 0 0 16px; color: var(--accent); }
+    .meet p { color: var(--muted); font-size: 18px; margin: 0 0 14px; }
+    .meet .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 22px 0 26px; }
+    .meet .pair .photo { height: 150px; }
+    @media (max-width: 900px) {
+      .hero-grid, .meet-grid { grid-template-columns: 1fr; gap: 36px; }
+      .hero-photo .photo { height: 320px; }
+      .hero-photo .badge { left: 12px; bottom: 12px; }
+      .work-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 200px; }
+      .meet .photo { height: 300px; }
+    }
+    @media (max-width: 560px) {
+      .work-grid { grid-template-columns: 1fr; grid-auto-rows: 220px; }
+      .work-grid figure.big { grid-column: auto; grid-row: span 1; }
+      .work h2, .meet h2 { font-size: 38px; }
+    }
+    /* ---- inside / outside + rentals strip ---- */
+    .tiers { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .tier { padding: 36px; }
+    .tier .photo { height: 260px; margin: -36px -36px 26px; }
+    .tier h3 { font-size: 40px; }
+    .tier .for { font-size: 16px; }
+    .tier ul { font-size: 16.5px; }
+    .rentals { margin-top: 24px; background: var(--accent); color: #fff; border-radius: 10px; border-left: 6px solid var(--yellow); padding: 22px 28px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .rentals-tag { display: inline-block; background: var(--yellow); color: var(--fg); font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+    .rentals h3 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 28px; line-height: 1; margin: 0 0 4px; }
+    .rentals p { margin: 0; color: #D6E2EE; font-size: 15.5px; max-width: 64ch; }
+    .rentals .btn-secondary { color: #fff; border-color: #fff; white-space: nowrap; flex: 0 0 auto; }
+    .rentals .btn-secondary:hover { background: #fff; color: var(--accent); }
+    @media (max-width: 800px) { .tiers { grid-template-columns: 1fr; } .rentals { flex-direction: column; align-items: flex-start; } .rentals .btn { width: 100%; } .tier .photo { height: 200px; } }
+    @media (max-width: 900px) { nav a { display: none; } }
+    @media (max-width: 800px) { .feature-grid, .tiers { grid-template-columns: 1fr; } .tiers { gap: 28px; } }
+    @media (max-width: 560px) {
+      .wrap { padding: 0 18px; }
+      section.wrap { padding: 56px 18px; }
+      section.areas.wrap { padding: 0 18px 56px; }
+      .logo img { height: 40px; }
+      header .btn { padding: 10px 12px; font-size: 13px; }
+      .hero { padding: 48px 0 64px; }
+      .hero .cta .btn { width: 100%; }
+      .logos { gap: 28px; }
+      .quote { font-size: 22px; }
+      .pricing h2, .closing h2 { font-size: 38px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-band">
+  <div class="wrap">
+    <header data-od-id="topnav">
+      <a class="logo" href="/" aria-label="GB Fixit Handyman Services, home"><img src="assets/gb-fixit-logo.png" alt="Handyman Dundee - GB Fixit Handyman Services" width="358" height="122"></a>
+      <nav aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#areas">Areas</a>
+        <a href="/about">About</a>
+        <a href="/reviews">Reviews</a>
+        <a href="/contact">Contact</a>
+        <a class="btn btn-secondary" href="tel:+447740443180" style="margin-left: 18px; display:inline-flex">Call 07740 443180</a>
+      </nav>
+    </header>
+    <section class="hero" data-od-id="hero">
+     <div class="hero-grid">
+     <div>
+      <span class="eyebrow">GB Fixit Handyman Services · Dundee</span>
+      <h1>Handyman in <span>Dundee.</span></h1>
+      <p class="sub">Dundee handyman now offering plumbing services for 2026. All trades covered.</p>
+      <p>GB Fixit Handyman Services is your local, friendly handyman business covering Dundee and surrounding areas. Father and son Kris and Gary take on everything from hanging doors to mowing lawns.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#quote">Get a free quote</a>
+        <a class="btn-link" href="tel:+447740443180">Or call Kris on 07740 443180 →</a>
+      </div>
+     </div>
+     <div class="hero-photo">
+      <div class="photo " role="img" aria-label="Photo: Kris and Gary with the van"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Kris and Gary with the van</b><small>Landscape · 1600 × 1200</small></div>
+      <div class="badge"><b>9.8/10</b><span>59 reviews on<br>Reference Line</span></div>
+     </div>
+     </div>
+    </section>
+  </div>
+  </div>
+
+  <section class="features" id="how" data-od-id="features">
+    <div class="wrap feature-grid">
+      <div class="feature">
+        <span class="num">01</span>
+        <h3>A written quote, first</h3>
+        <p>We visit, talk through the options and send a free written quote that sets out each step, the materials and the labour.</p>
+      </div>
+      <div class="feature">
+        <span class="num">02</span>
+        <h3>We start and finish when we say</h3>
+        <p>If anything changes, we explain it and agree it with you first. Kris is your point of contact from first call to final invoice.</p>
+      </div>
+      <div class="feature">
+        <span class="num">03</span>
+        <h3>Left tidy every day</h3>
+        <p>We clean up at the end of every day, not just the last one. "You would never have known there had been a tradesman in the house."</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="video" id="video" data-od-id="video">
+    <div class="wrap video-grid">
+      <div>
+        <span class="eyebrow" style="color:var(--accent)">Watch</span>
+        <h2>What GB Fixit can do for you</h2>
+        <p>A quick cartoon tour of Kris and Gary's services, from hanging doors and painting rooms to fences, gardens and plumbing.</p>
+        <ul aria-label="Services shown in the video">
+          <li>Decorating</li><li>Joinery</li><li>Fencing</li><li>Gardens</li><li>Repairs</li><li>Plumbing</li>
+        </ul>
+      </div>
+      <a class="player" href="#video" role="img" aria-label="Video placeholder: GB Fixit cartoon showing their services">
+        <span class="note">[VIDEO: GB Fixit cartoon · 16:9]</span>
+        <span class="play"><svg aria-hidden="true" width="38" height="38" viewBox="0 0 24 24" fill="#0E2436"><path d="M8 5.5v13l10.5-6.5z"/></svg></span>
+        <span class="lbl"><b>GB Fixit: our services</b><small>Wix Video or YouTube embed</small></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="proof wrap" data-od-id="proof">
+    <h2>Reviewed by our customers on</h2>
+    <div class="logos">
+      <div><b>9.8/10</b><span>Reference Line · 59 reviews</span></div>
+      <div><b>5.0 ★</b><span>Google · 35 reviews</span></div>
+      <div><b>Trusted</b><span>Dundee Trusted Trader</span></div>
+    </div>
+    <p class="quote">“The most positive, proactive, happy tradies I've ever experienced.”<cite>Cara-Anne M., Google, Jun 2026</cite></p>
+  </section>
+
+  <section class="pricing wrap" id="services" data-od-id="services">
+    <h2>Handyman Dundee services</h2>
+    <p class="lede">From odd jobs around the house to bigger projects. Pick a trade to see typical jobs and recent work.</p>
+    <div class="tiers">
+      <div class="tier">
+        <div class="photo" role="img" aria-label="Photo: Inside job: decorated room or new doors"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Inside job: decorated room or new doors</b><small>1600 × 900</small></div>
+        <h3>Inside</h3>
+        <p class="for">Rooms, doors, kitchens and bathrooms, and the odd jobs list.</p>
+        <ul>
+          <li><a href="/painters-decorators-dundee">Painting &amp; decorating</a></li>
+          <li><a href="/joiner-dundee">Joinery: doors, skirting, cupboards</a></li>
+          <li><a href="/plumber-dundee">Plumbing <span class="new">New 2026</span></a></li>
+          <li><a href="/property-maintenance-dundee">Repairs &amp; property maintenance</a></li>
+        </ul>
+        <a class="btn btn-primary" href="#quote">Quote for inside work</a>
+      </div>
+      <div class="tier">
+        <div class="photo" role="img" aria-label="Photo: Outside job: new fence or garden"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Outside job: new fence or garden</b><small>1600 × 900</small></div>
+        <h3>Outside</h3>
+        <p class="for">Fences, gardens, gutters, garages and outbuildings.</p>
+        <ul>
+          <li><a href="/fencing-dundee">Fencing &amp; gates</a></li>
+          <li><a href="/gardener-dundee">Gardens &amp; landscaping</a></li>
+          <li><a href="/property-maintenance-dundee">Gutters, fascias &amp; repointing</a></li>
+          <li><a href="/joiner-dundee">Garages &amp; outbuildings</a></li>
+        </ul>
+        <a class="btn btn-primary" href="#quote">Quote for outside work</a>
+      </div>
+    </div>
+    <div class="rentals">
+      <div class="rentals-text">
+        <span class="rentals-tag">For landlords &amp; letting agents</span>
+        <h3>Rentals</h3>
+        <p>Let-ready properties with one point of contact: void turnarounds, check-out repairs and ongoing maintenance.</p>
+      </div>
+      <a class="btn btn-secondary" href="/landlord-property-maintenance-dundee">Landlord services</a>
+    </div>
+  </section>
+
+  <section class="work wrap" id="work" data-od-id="recent-work">
+    <h2>Recent handyman work in Dundee</h2>
+    <p class="lede">Real jobs from the last year. Swap each placeholder for a before/after or finished photo from the job.</p>
+    <div class="work-grid">
+      <figure class="big"><div class="photo " role="img" aria-label="Photo: Garage renovation"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Garage renovation</b><small>1600 × 1200</small></div><figcaption>Garage renovated: new roof, timbers, doors realigned<span>Jun 2026</span></figcaption></figure>
+      <figure><div class="photo " role="img" aria-label="Photo: Fence and decking"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Fence and decking</b><small>1200 × 900</small></div><figcaption>Fence and decking repaired · DD3<span>Oct 2026</span></figcaption></figure>
+      <figure><div class="photo " role="img" aria-label="Photo: Mural wallpaper wall"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Mural wallpaper wall</b><small>1200 × 900</small></div><figcaption>Living room and bedroom redecorated<span>Jun 2026</span></figcaption></figure>
+      <figure><div class="photo " role="img" aria-label="Photo: Patio and slate gravel"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Patio and slate gravel</b><small>1200 × 900</small></div><figcaption>Drive and patio power-washed, slate laid<span>Jun 2026</span></figcaption></figure>
+      <figure><div class="photo " role="img" aria-label="Photo: Roughcast before / after"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Roughcast before / after</b><small>1200 × 900</small></div><figcaption>Roughcast exterior repainted · DD6<span>Sep 2025</span></figcaption></figure>
+      <figure><div class="photo " role="img" aria-label="Photo: Side gate"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Side gate</b><small>1200 × 900</small></div><figcaption>Rotten gate boards replaced, fence painted · DD2<span>Sep 2026</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="meet" id="about" data-od-id="meet">
+    <div class="wrap meet-grid">
+      <div class="photo " role="img" aria-label="Photo: Kris and Gary together"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Kris and Gary together</b><small>Portrait or square · 1200 × 1400</small></div>
+      <div>
+        <span class="eyebrow" style="color:var(--accent)">Meet the team</span>
+        <h2>Kris and Gary Brown</h2>
+        <p>GB Fixit is a father-and-son team based on Pitkerro Road in Dundee. When you book us, we're the people who quote, turn up and do the work.</p>
+        <p>Kris is your point of contact from first call to final invoice, and for the jobs that need another trade, we have a trusted network of plasterers, electricians and plumbers.</p>
+        <div class="pair">
+          <div class="photo " role="img" aria-label="Photo: Kris at work"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Kris at work</b><small>800 × 600</small></div>
+          <div class="photo " role="img" aria-label="Photo: Gary at work"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Gary at work</b><small>800 × 600</small></div>
+        </div>
+        <a class="btn btn-secondary" href="/about">More about us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="areas wrap" id="areas" data-od-id="areas">
+    <p>Covering Dundee, <a href="/handyman-broughty-ferry">Broughty Ferry</a>, <a href="/handyman-monifieth">Monifieth</a>, <a href="/handyman-carnoustie">Carnoustie</a>, Arbroath, Invergowrie, Birkhill, Tayport, Newport and Wormit.</p>
+  </section>
+
+  <section class="closing" id="quote" data-od-id="closing">
+    <div class="wrap">
+      <h2>One call. All trades covered.</h2>
+      <p>Free, no-obligation written quotes across Dundee and surrounding areas.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="/contact">Get a free quote</a>
+        <a class="btn btn-secondary" href="tel:+447740443180">Call Kris 07740 443180</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="wrap" data-od-id="footer">© 2026 GB Fixit Handyman Services · 32 Pitkerro Road, Dundee DD4 7EG · <a href="/about">About</a> · <a href="/reviews">Reviews</a> · <a href="/contact">Contact</a></footer>
+</body>
+</html>

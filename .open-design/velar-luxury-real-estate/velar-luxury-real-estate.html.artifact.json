@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "velar-luxury-real-estate",
+  "entry": ".open-design/velar-luxury-real-estate/velar-luxury-real-estate.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "standalone",
+    "site",
+    "png",
+    "jpeg",
+    "pdf"
+  ],
+  "supportingFiles": [],
+  "createdAt": "2026-10-29T20:32:45.606Z",
+  "updatedAt": "2026-10-29T20:32:45.606Z",
+  "sourceSkillId": "od:prototype:velar-luxury-real-estate",
+  "metadata": {
+    "remixedFrom": "od:prototype:velar-luxury-real-estate"
+  }
+}

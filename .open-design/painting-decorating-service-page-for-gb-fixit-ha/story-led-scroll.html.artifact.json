@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "Painting & decorating: Story-led",
+  "entry": ".open-design/painting-decorating-service-page-for-gb-fixit-ha/story-led-scroll.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "standalone",
+    "site",
+    "png",
+    "jpeg",
+    "pdf"
+  ],
+  "supportingFiles": [
+    "shared.css",
+    "assets/gb-fixit-logo.png"
+  ],
+  "createdAt": "2026-10-29T19:05:40.713Z",
+  "updatedAt": "2026-10-29T19:05:40.713Z",
+  "sourceSkillId": "od:prototype:web-prototype",
+  "designSystemId": "user:gb-fixit",
+  "explorationId": "painting-decorating-service-page-for-gb-fixit-ha",
+  "directionId": "story-led-scroll"
+}

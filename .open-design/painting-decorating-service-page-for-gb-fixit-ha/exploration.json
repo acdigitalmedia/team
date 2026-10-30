@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "explorationId": "painting-decorating-service-page-for-gb-fixit-ha",
+  "title": "Painting & decorating service page for GB Fixit Handyman…",
+  "brief": "Painting & decorating service page for GB Fixit Handyman Services, Dundee (URL /painters-decorators-dundee). SEO focus: \"painters and decorators dundee\" (H1 \"Painters and decorators in Dundee\"); supporting \"decorator dundee\", \"painter dundee\", \"exterior painting dundee\". Must link back to the homepage with anchor text \"handyman in Dundee\". Page content (real, from the approved copy): intro \"Kris and Gary paint and decorate homes across Dundee, Broughty Ferry, Monifieth and Carnoustie, inside and out. You get a written quote that sets out each step, the work starts and finishes when we say, and the house is left tidy at the end of every day.\" Typical jobs: full room redecoration (walls, ceilings, doors, skirting, frames); wallpapering and stripping incl. feature and mural walls; gloss, satinwood, staining and varnishing on doors, banisters and handrails; exterior painting: roughcast, wooden windows and doors, fascias; metalwork: balconies and downpipes wire-brushed and repainted; paint stripping and prep on older woodwork. Recent jobs: roughcast exterior repainted (DD6, Sep 2025); living room and master bedroom redecorated, new skirting, mural wallpaper hung (Dundee, Jun 2026); all wooden windows and doors repainted plus metal balcony (DD6, Jun 2023); kitchen and bathroom painted incl. ceilings and frames (Dundee DD2, Nov 2022); living room fully decorated while owners on holiday (Dundee DD3, Aug 2022); five old metal downpipes prepared and repainted (Dundee DD2, Aug 2022). Reviews: \"Everything was done to a high standard and they started and finished when they said.\" (Pam, Reference Line, Dec 2025); \"You would never had known that there had been a tradesman in the house.\" (Reference Line, Dundee, Nov 2022); \"We went on holiday while the work was being done, it was such a delight to return to find everything finished.\" (Reference Line, Dundee, Aug 2022). FAQs: Do you paint outside as well as inside? / Can you hang wallpaper? / Can the work be done while we are away? / How do quotes work? Ratings 9.8/10 from 59 Reference Line reviews, 5.0 from 35 Google reviews, Dundee Trusted Trader. Quote form + Kris 07740 443180, kris@gbfixit.co.uk. Use the same header/footer and nav as the new homepage. Photos are labelled placeholders.",
+  "skillId": "web-prototype",
+  "skillMode": "prototype",
+  "axis": "structure",
+  "designSystemId": "user:gb-fixit",
+  "designSystemName": "Design System Inspired by GB Fixit",
+  "createdAt": "2026-10-29T19:04:09.742Z",
+  "directions": [
+    {
+      "id": "classic-hero-grid",
+      "label": "Classic hero + feature grid",
+      "axis": "structure",
+      "summary": "The familiar, scannable marketing layout: one clear promise above the fold, then evidence in a grid.",
+      "spec": "### Classic hero + feature grid  `(id: classic-hero-grid)`\n\nThe familiar, scannable marketing layout: one clear promise above the fold, then evidence in a grid.\n\n**Cues:**\n- split hero: headline and primary action on one side, product visual on the other\n- a 3- or 4-column feature grid directly below, icon or small visual per cell\n- one social-proof strip (logos or a single quote) between sections\n\n**Must differ:** Hero is a two-column split and the key section is a uniform grid; siblings must not use a split hero or a uniform card grid.\n",
+      "entryPath": ".open-design/painting-decorating-service-page-for-gb-fixit-ha/classic-hero-grid.html"
+    },
+    {
+      "id": "story-led-scroll",
+      "label": "Story-led long scroll",
+      "axis": "structure",
+      "summary": "A narrative page that earns attention section by section, like an editorial feature.",
+      "spec": "### Story-led long scroll  `(id: story-led-scroll)`\n\nA narrative page that earns attention section by section, like an editorial feature.\n\n**Cues:**\n- full-width, centred, type-led hero with an oversized headline and no side visual\n- alternating full-bleed sections, each making one point with one image or diagram\n- generous vertical rhythm; section kickers numbered or labelled like chapters\n\n**Must differ:** Hero is centred and type-only, and sections alternate full-bleed; siblings must not lead with a centred type-only hero.\n",
+      "entryPath": ".open-design/painting-decorating-service-page-for-gb-fixit-ha/story-led-scroll.html"
+    },
+    {
+      "id": "product-ui-first",
+      "label": "Product UI first",
+      "axis": "structure",
+      "summary": "Show the product immediately: the interface itself is the hero and the argument.",
+      "spec": "### Product UI first  `(id: product-ui-first)`\n\nShow the product immediately: the interface itself is the hero and the argument.\n\n**Cues:**\n- a large, realistic product screenshot or device frame dominates the first screen, copy kept to one line plus an action\n- annotated callouts pointing at real parts of the UI\n- the key section is an interactive-looking walkthrough (tabs or steps), not marketing cards\n\n**Must differ:** The first screen is dominated by a product UI with annotations; siblings must not make a product screenshot the dominant hero element.\n",
+      "entryPath": ".open-design/painting-decorating-service-page-for-gb-fixit-ha/product-ui-first.html"
+    }
+  ]
+}

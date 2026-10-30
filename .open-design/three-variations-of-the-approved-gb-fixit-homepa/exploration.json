@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "explorationId": "three-variations-of-the-approved-gb-fixit-homepa",
+  "title": "Three variations of the approved GB Fixit homepage…",
+  "brief": "Three variations of the approved GB Fixit homepage (.open-design/saas-landing/saas-landing.html). Keep the same style exactly: navy hero band, Barlow Semi Condensed uppercase headings, yellow buttons, pale-blue and mid-blue bands, Inside/Outside service cards with a smaller Rentals strip, photo slots, cartoon video, recent work, Meet Kris and Gary, deep navy closing. Vary the hero and the order/emphasis of sections only. Same copy and SEO.",
+  "skillId": "saas-landing",
+  "skillMode": "prototype",
+  "axis": "custom",
+  "designSystemId": "user:gb-fixit",
+  "designSystemName": "Design System Inspired by GB Fixit",
+  "createdAt": "2026-10-29T21:03:15.470Z",
+  "directions": [
+    {
+      "id": "a-photo-led",
+      "label": "A · Photo-led",
+      "axis": "custom",
+      "summary": "Full-width hero photo of Kris and Gary behind a navy overlay with the headline and buttons on top; trust figures as a white bar overlappi…",
+      "spec": "### A · Photo-led  `(id: a-photo-led)`\n\nFull-width hero photo of Kris and Gary behind a navy overlay with the headline and buttons on top; trust figures as a white bar overlapping the bottom of the hero; services straight after; video later in the page.\n",
+      "entryPath": ".open-design/three-variations-of-the-approved-gb-fixit-homepa/a-photo-led.html"
+    },
+    {
+      "id": "b-video-first",
+      "label": "B · Video-first",
+      "axis": "custom",
+      "summary": "Split hero with the cartoon video as the hero visual instead of the photo; the three numbered points move below services; Kris and Gary p…",
+      "spec": "### B · Video-first  `(id: b-video-first)`\n\nSplit hero with the cartoon video as the hero visual instead of the photo; the three numbered points move below services; Kris and Gary photo stays in the Meet section, which moves up above recent work.\n",
+      "entryPath": ".open-design/three-variations-of-the-approved-gb-fixit-homepa/b-video-first.html"
+    },
+    {
+      "id": "c-quote-first",
+      "label": "C · Quote-first",
+      "axis": "custom",
+      "summary": "Hero with headline on the left and a compact free-quote form in a white card on the right (name, phone, job type, button); a strip of thr…",
+      "spec": "### C · Quote-first  `(id: c-quote-first)`\n\nHero with headline on the left and a compact free-quote form in a white card on the right (name, phone, job type, button); a strip of three project photos under the hero; services, then reviews, then video and Meet Kris and Gary.\n",
+      "entryPath": ".open-design/three-variations-of-the-approved-gb-fixit-homepa/c-quote-first.html"
+    }
+  ]
+}

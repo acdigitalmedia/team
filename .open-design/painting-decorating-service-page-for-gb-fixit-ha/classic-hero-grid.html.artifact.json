@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "Painting & decorating: Classic",
+  "entry": ".open-design/painting-decorating-service-page-for-gb-fixit-ha/classic-hero-grid.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "standalone",
+    "site",
+    "png",
+    "jpeg",
+    "pdf"
+  ],
+  "supportingFiles": [
+    "shared.css",
+    "assets/gb-fixit-logo.png"
+  ],
+  "createdAt": "2026-10-29T19:05:40.683Z",
+  "updatedAt": "2026-10-29T19:05:40.683Z",
+  "sourceSkillId": "od:prototype:web-prototype",
+  "designSystemId": "user:gb-fixit",
+  "explorationId": "painting-decorating-service-page-for-gb-fixit-ha",
+  "directionId": "classic-hero-grid"
+}

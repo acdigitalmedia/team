@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "GB Fixit Homepage (new)",
+  "entry": ".open-design/gb-fixit-homepage/gb-fixit-homepage.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "standalone",
+    "site",
+    "png",
+    "jpeg",
+    "pdf"
+  ],
+  "supportingFiles": [
+    "assets/gb-fixit-logo.png"
+  ],
+  "createdAt": "2026-10-29T19:00:16.670Z",
+  "updatedAt": "2026-10-29T19:00:16.803Z",
+  "sourceSkillId": "od:prototype:web-prototype",
+  "designSystemId": "user:gb-fixit",
+  "metadata": {
+    "exports": [
+      {
+        "path": ".open-design/gb-fixit-homepage/exports/gb-fixit-homepage.html",
+        "format": "standalone",
+        "bytes": 91812,
+        "exportedAt": "2026-10-29T19:00:16.802Z"
+      }
+    ],
+    "shares": [
+      {
+        "provider": "claude-artifact",
+        "url": "https://claude.ai/artifact/NhEtJtJGdh1F8P2yd3PjTw",
+        "publishedAt": "2026-10-29T18:39:57.435Z",
+        "siteRef": "https://claude.ai/artifact/NhEtJtJGdh1F8P2yd3PjTw"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "Homepage: Toolbox blueprint",
+  "entry": ".open-design/gb-fixit-handyman-services-homepage-gbfixit-co-u/toolbox-blueprint.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "standalone",
+    "site",
+    "png",
+    "jpeg",
+    "pdf"
+  ],
+  "supportingFiles": [
+    "assets/gb-fixit-logo.png"
+  ],
+  "createdAt": "2026-10-29T19:45:03.431Z",
+  "updatedAt": "2026-10-29T19:45:03.431Z",
+  "sourceSkillId": "od:prototype:web-prototype",
+  "designSystemId": "user:gb-fixit",
+  "explorationId": "gb-fixit-handyman-services-homepage-gbfixit-co-u",
+  "directionId": "toolbox-blueprint"
+}

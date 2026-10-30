@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "web-prototype",
+  "entry": ".open-design/web-prototype/web-prototype.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "standalone",
+    "site",
+    "png",
+    "jpeg",
+    "pdf"
+  ],
+  "supportingFiles": [
+    "assets/template.html"
+  ],
+  "createdAt": "2026-10-29T20:32:45.669Z",
+  "updatedAt": "2026-10-29T20:32:45.669Z",
+  "sourceSkillId": "od:prototype:web-prototype:example",
+  "metadata": {
+    "remixedFrom": "od:prototype:web-prototype:example"
+  }
+}

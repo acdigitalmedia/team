@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "Homepage C · Quote-first",
+  "entry": ".open-design/three-variations-of-the-approved-gb-fixit-homepa/c-quote-first.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "standalone",
+    "site",
+    "png",
+    "jpeg",
+    "pdf"
+  ],
+  "supportingFiles": [
+    "assets/gb-fixit-logo.png"
+  ],
+  "createdAt": "2026-10-29T21:04:49.642Z",
+  "updatedAt": "2026-10-29T21:04:49.642Z",
+  "sourceSkillId": "od:prototype:saas-landing",
+  "designSystemId": "user:gb-fixit",
+  "explorationId": "three-variations-of-the-approved-gb-fixit-homepa",
+  "directionId": "c-quote-first"
+}

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "GB Fixit Homepage: Swiss industrial print (remix)",
+  "entry": ".open-design/web-prototype-taste-brutalist/web-prototype-taste-brutalist.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "standalone",
+    "site",
+    "png",
+    "jpeg",
+    "pdf"
+  ],
+  "supportingFiles": [
+    "assets/gb-fixit-logo.png"
+  ],
+  "createdAt": "2026-10-29T20:06:24.479Z",
+  "updatedAt": "2026-10-29T20:06:49.920Z",
+  "sourceSkillId": "od:other:web-prototype-taste-brutalist:example",
+  "designSystemId": "user:gb-fixit",
+  "metadata": {
+    "remixedFrom": "od:other:web-prototype-taste-brutalist:example",
+    "exports": [
+      {
+        "path": ".open-design/web-prototype-taste-brutalist/exports/web-prototype-taste-brutalist.html",
+        "format": "standalone",
+        "bytes": 54810,
+        "exportedAt": "2026-10-29T20:06:35.716Z"
+      }
+    ],
+    "shares": [
+      {
+        "provider": "claude-artifact",
+        "url": "https://claude.ai/artifact/1eUjQwtXBf4qXZAjxjzWPE",
+        "publishedAt": "2026-10-29T20:06:49.918Z",
+        "siteRef": "https://claude.ai/artifact/1eUjQwtXBf4qXZAjxjzWPE"
+      }
+    ]
+  }
+}

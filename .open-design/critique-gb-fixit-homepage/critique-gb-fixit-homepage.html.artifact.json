@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "Critique · GB Fixit Homepage (Blueprint)",
+  "entry": ".open-design/critique-gb-fixit-homepage/critique-gb-fixit-homepage.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "standalone",
+    "site",
+    "png",
+    "jpeg",
+    "pdf"
+  ],
+  "createdAt": "2026-10-29T20:06:24.502Z",
+  "updatedAt": "2026-10-29T20:06:24.502Z",
+  "sourceSkillId": "od:prototype:critique"
+}
